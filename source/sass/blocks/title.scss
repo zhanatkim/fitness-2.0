@@ -1,0 +1,20 @@
+.title {
+  margin: 0;
+  padding: 0;
+  font-family: $ff-title;
+  font-weight: 600;
+  line-height: normal;
+
+  color: $color-default-white;
+  text-transform: uppercase;
+
+  &--small {
+    font-size: 48px;
+    letter-spacing: 1.44px;
+  }
+
+  &--large {
+    font-size: 92px;
+    letter-spacing: 4.6px;
+  }
+}

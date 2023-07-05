@@ -38,29 +38,29 @@
 
 // Desktop first
 
-@mixin vp-1919 {
-  @media (max-width: ($vp-1920 - 1px)) {
+// @mixin vp-1919 {
+//   @media (max-width: ($vp-1920 - 1px)) {
+//     @content;
+//   }
+// }
+
+// @mixin vp-1439 {
+//   @media (max-width: ($vp-1440 - 1px)) {
+//     @content;
+//   }
+// }
+
+@mixin vp-1199 {
+  @media (max-width: ($vp-1200 - 1px)) {
     @content;
   }
 }
 
-@mixin vp-1439 {
-  @media (max-width: ($vp-1440 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-1279 {
-  @media (max-width: ($vp-1280 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-1023 {
-  @media (max-width: ($vp-1024 - 1px)) {
-    @content;
-  }
-}
+// @mixin vp-1023 {
+//   @media (max-width: ($vp-1024 - 1px)) {
+//     @content;
+//   }
+// }
 
 @mixin vp-767 {
   @media (max-width: ($vp-768 - 1px)) {
@@ -68,11 +68,11 @@
   }
 }
 
-@mixin vp-374 {
-  @media (max-width: ($vp-375 - 1px)) {
-    @content;
-  }
-}
+// @mixin vp-374 {
+//   @media (max-width: ($vp-375 - 1px)) {
+//     @content;
+//   }
+// }
 
 // Mobile first
 
@@ -116,3 +116,12 @@
 
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
 // этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
+@mixin circle($size) {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: $size;
+  height: $size;
+  left: calc(50% - #{$size/2});
+  top: calc(50% - #{$size/2});
+}

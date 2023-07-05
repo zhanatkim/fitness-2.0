@@ -1,0 +1,53 @@
+.hero-header {
+  width: 100%;
+  background: $color-bg-grd;
+  color: $color-default-white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-header__container {
+  // max-width: 63%;
+  padding-top: 51px;
+  padding-bottom: 51px;
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+}
+
+.hero-header__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 121px;
+  position: relative;
+  gap: 25px;
+}
+
+.hero-header__title {
+  text-align: end;
+}
+
+.hero-header__list {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 300px;
+  left: 0;
+  z-index: 2;
+
+}
+
+.hero-header__picture {
+  margin-right: 14%;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.hero-header__button {
+  margin-top: 55px;
+}

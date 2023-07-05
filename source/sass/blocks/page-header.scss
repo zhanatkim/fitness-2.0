@@ -1,0 +1,32 @@
+.page-header {
+  width: 100%;
+  // background-color: #b80027;
+  z-index: 2;
+  position: relative;
+}
+.page-header__container {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    padding-top: 40px;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+  }
+}
+.page-header__link {
+  color: $color-default-white;
+font-size: 26px;
+font-family: "Alumni Sans";
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.78px;
+}
+

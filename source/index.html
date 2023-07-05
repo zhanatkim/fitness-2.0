@@ -10,31 +10,40 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html">
-        <span>SUPERGYM</span>
-      </a>
-      <a href="tel:88005555555">8-800-555-55-55</a>
+      <div class="page-header__container container">
+        <a class="page-header__link" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/svg/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+            <img src="img/svg/logo-mobile.svg" alt="Логотип фитнес-центра SUPERGYM.">
+          </picture>
+        </a>
+        <a class="page-header__link page-header__link--phone" href="tel:88005555555">8-800-555-55-55</a>
+      </div>
     </header>
-    <main>
+    <main class="main-container">
       <div class="hero-header">
-        <p>Омск</p>
-        <h1>ФИТНЕС ЦЕНТР</h1>
-        <ul>
-          <li>Тренажёрный зал</li>
-          <li>Групповые занятия</li>
-          <li>Кардио-зона</li>
-        </ul>
-        <a href="#">Купить абонемент</a>
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero-photo-1x.webp 1x, img/hero-photo-2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-photo-tablet-1x.webp 1x, img/hero-photo-tablet-2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/hero-photo-1x.jpg 1x, img/hero-photo-2x.jpg 2x">
-          <img src="img/hero-photo-tablet-1x.jpg 1x, img/hero-photo-tablet-2x.jpg 2x" alt="атлет-супермен">
-        </picture>
-
+        <div class="hero-header__container container">
+          <div class="hero-header__inner">
+            <p class="hero-header__text title title--small">Омск</p>
+            <h1 class="hero-header__title title title--large">ФИТНЕС ЦЕНТР</h1>
+            <ul class="hero-header__list">
+              <li class="hero-header__item">Тренажёрный зал</li>
+              <li class="hero-header__item">Групповые занятия</li>
+              <li class="hero-header__item">Кардио-зона</li>
+            </ul>
+            <a class="hero-header__button button button--dark" href="#membership">Купить абонемент</a>
+          </div>
+          <picture class="hero-header__picture">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero-photo-1x.webp 1x, img/hero-photo-2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-photo-tablet-1x.webp 1x, img/hero-photo-tablet-2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/hero-photo-1x.jpg 1x, img/hero-photo-2x.jpg 2x">
+            <img src="img/hero-photo-tablet-1x.jpg 1x, img/hero-photo-tablet-2x.jpg 2x" alt="атлет-супермен">
+          </picture>
+        </div>
       </div>
       <section class="gym"></section>
-      <section class="tariff"></section>
+      <section class="membership" id="membership"></section>
       <section class="supergames"></section>
       <section class="coaches"></section>
       <section class="advantages"></section>
