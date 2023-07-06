@@ -1,0 +1,59 @@
+.page-footer {
+  background-color: $color-bg-footer;
+  min-height: 108px;
+  display: flex;
+}
+
+.page-footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__logo {
+  padding-top: 12px;
+}
+
+.page-footer__list {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+.page-footer__link {
+  color: $color-default-white;
+  position: relative;
+  padding: 5px 10px;
+
+  @include hover {
+    &::after {
+      content: "";
+      height: 1px;
+      background-color: $color-default-white;
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 0;
+    }
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-white;
+    outline-offset: 1px;
+  }
+
+  @include active {
+    outline: none;
+  }
+
+  &:active::after {
+    background-color: transparent;
+  }
+
+}
+
+.page-footer__social {
+  list-style-type: none;
+  display: flex;
+  gap: 11px;
+}

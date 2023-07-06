@@ -1,8 +1,10 @@
 .page-header {
   width: 100%;
   // background-color: #b80027;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2;
-  position: relative;
 }
 .page-header__container {
   padding-top: 30px;
@@ -22,8 +24,8 @@
 }
 .page-header__link {
   color: $color-default-white;
-font-size: 26px;
-font-family: "Alumni Sans";
+font-size: 1.63em;
+font-family: $ff-title;
 font-style: normal;
 font-weight: 700;
 line-height: normal;

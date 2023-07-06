@@ -26,7 +26,7 @@
         <div class="hero-header__container container">
           <div class="hero-header__inner">
             <p class="hero-header__text title title--small">Омск</p>
-            <h1 class="hero-header__title title title--large">ФИТНЕС ЦЕНТР</h1>
+            <h1 class="hero-header__title title title--large">Фитнес центр</h1>
             <ul class="hero-header__list">
               <li class="hero-header__item">Тренажёрный зал</li>
               <li class="hero-header__item">Групповые занятия</li>
@@ -45,15 +45,68 @@
       <section class="gym"></section>
       <section class="membership" id="membership"></section>
       <section class="supergames"></section>
-      <section class="coaches"></section>
+      <section class="coaches" id="coaches"></section>
       <section class="advantages"></section>
-      <section class="promo"></section>
+      <section class="promo" id="promo"></section>
       <section class="faq"></section>
       <section class="feedback"></section>
       <section class="freeclass"></section>
       <section class="contacts"></section>
     </main>
-    <footer></footer>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <a  class="page-footer__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/svg/footer-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/svg/footer-logo-tablet.svg">
+            <img src="img/svg/footer-logo-mobile.svg" alt="Логотип фитнес-центра SUPERGYM.">
+          </picture>
+        </a>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#">Услуги</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#membership">Абонементы</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#promo">Акции</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#coaches">Тренеры</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#">Расписание</a>
+          </li>
+        </ul>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link">
+              <svg width="25" height="25" fill="currentColor">
+                <use xlink:href="img/svg/sprite.svg#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="social__link">
+              <svg width="25" height="25" fill="currentColor">
+                <use xlink:href="img/svg/sprite.svg#icon-ok"></use>
+              </svg>
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="social__link">
+              <svg width="25" height="25" fill="currentColor">
+                <use xlink:href="img/svg/sprite.svg#icon-reddit"></use>
+              </svg>
+              <span class="visually-hidden">Reddit</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
