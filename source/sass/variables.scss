@@ -13,9 +13,9 @@ $color-accent-blue:                #103aae;
 // Gradient
 
 $color-grd-secondary:              linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
-$color-grd-btn-bg:                 linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+$color-grd-btn-bg:                 linear-gradient(83deg, #003d85 0%, #b80027 100%);
 
-//Background
+//Background linear-gradient(83deg, #003d85 0%, #b80027 88.54%)  linear-gradient(151deg, #ED0233 0%, #003EB7 100%)
 
 $color-bg-light:                    #f8f9fc;
 $color-bg-banner:                   #ed0233;
@@ -57,6 +57,6 @@ $vp-1200:                           1200px;
 
 // Retina
 // ---------------------------------
-//$retina-dppx:                       2dppx;
+$retina-dppx:                       2dppx;
 $retina-dpi:                        144dpi;
-$retina-dppx:                       1.5dppx;
+// $retina-dppx:                       1.5dppx;

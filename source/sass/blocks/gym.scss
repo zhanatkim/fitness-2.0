@@ -1,0 +1,151 @@
+.gym {
+  position: relative;
+  width: 100%;
+  padding: 0 103px;
+  padding-top: 120px;
+  padding-bottom: 235px;
+  display: grid;
+  grid-template-columns: 1fr 660px;
+  justify-content: space-between;
+  gap: 85px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    padding: 0 calc(50% - 339px);
+    padding-top: 100px;
+    padding-bottom: 183px;
+    gap: 50px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 70px;
+    padding-bottom: 65px;
+    gap: 40px;
+  }
+}
+
+.gym__inner {
+  display: flex;
+  flex-direction: column;
+  padding-top: 49px;
+  padding-left: 15%;
+
+  @include vp-1199 {
+    align-items: center;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    align-items: flex-start;
+    padding: 0 calc(50% - 145px);
+  }
+}
+
+.gym__title {
+  color: $color-default-navy;
+  font-size: 48px;
+
+  @include vp-1199 {
+    font-size: 42px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+  }
+}
+
+.gym__feature {
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  padding-top: 25px;
+  padding-bottom: 50px;
+
+  @include vp-1199 {
+    padding-top: 6px;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+}
+
+.gym__indent {
+  margin: 0;
+  padding: 5px 0;
+  font-weight: 300;
+
+
+  @include vp-1199 {
+    padding: 0 13%;
+    text-align: center;
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    padding: 0;
+    text-align: start;
+  }
+
+}
+
+.gym__multimedia {
+  position: relative;
+  width: 100%;
+
+  @include vp-1199 {
+
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+}
+
+.gym__photo {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+
+  @include vp-767 {
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    // width: 100%;
+    // height: auto;
+  }
+}
+
+.gym__video {
+  width: 364px;
+  aspect-ratio: 16 / 10;
+  position: absolute;
+  left: -63px;
+  top: 288px;
+
+  @include vp-1199 {
+    width: 266px;
+    top: 261px;
+    left: calc(50% - 266px / 2);
+  }
+
+  @include vp-767 {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+
+}

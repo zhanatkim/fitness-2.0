@@ -1,0 +1,195 @@
+
+.video {
+  cursor: pointer;
+
+  background-image: url("../img/gym-video-cover-desktop-1x.webp");
+  background-size: cover;
+  @include retina {
+    background-image: url("../img/gym-video-cover-desktop-2x.webp");
+  }
+
+  @include vp-1199 {
+    background-image: url("../img/gym-video-cover-tablet-1x.webp");
+    @include retina {
+      background-image: url("../img/gym-video-cover-tablet-2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/gym-video-cover-mobile-1x.webp");
+    @include retina {
+      background-image: url("../img/gym-video-cover-mobile-2x.webp");
+    }
+  }
+
+  //синяя подложка
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: rgba(20, 54, 122, 0.50);
+    top: 0;
+    bottom: 0;
+  }
+
+  @include hover-focus {
+    &::before {
+      display: none;
+    }
+
+    .video__button {
+      color: $color-default-navy;
+      border-image: $color-default-navy;
+      &::before {
+        background: $color-default-navy;
+      }
+      &::after {
+        background: $color-default-white;
+      }
+    }
+  }
+
+  @include active {
+    .video__button {
+      &::after {
+        width: calc(72% - 20%);
+        height: calc(72% - 20%);
+      }
+    }
+  }
+
+  &[data-is-playing = "is-playing"] {
+    background-image: none;
+
+    &::before {
+      display: none;
+    }
+
+    .video__button {
+      visibility: hidden;
+    }
+
+    .video__player {
+      visibility: visible;
+    }
+  }
+
+}
+
+.video__player {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+.video__button {
+  cursor: pointer;
+  color: $color-default-white;
+  margin: auto;
+  padding: 0;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 50%;
+    background: linear-gradient(83deg, rgba(#003d85, 20%) 0%, rgba(#b80027, 20%) 88.54%);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+  }
+
+  // 83deg, #003D85 0%, #B80027 88.54%
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 72%;
+    height: 72%;
+    border-radius: 50%;
+    background: $color-grd-btn-bg;
+    z-index: 1;
+  }
+
+  & svg {
+    z-index: 2;
+    width: 13px;
+    height: 17px;
+  }
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+
+    & svg {
+      width: 9px;
+      height: 12px;
+    }
+  }
+
+  &:disabled {
+    color: rgba($color-default-navy, 40%);
+    &::before {
+      background: rgba($color-default-navy, 40%);
+    }
+    &::after {
+      background: $color-default-white;
+    }
+  }
+
+  // &[data-is-closed = "is-closed"] {
+  //   display: none;
+  // }
+}
+
+// Кнопка без свг
+// ____________________
+
+// .video__button {
+//   position: absolute;
+//   background-color: transparent;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   margin: auto;
+//   width: 100px;
+//   height: 100px;
+//   border: none;
+//   border-radius: 50%;
+//   box-shadow: 0 0 0 2px #ffffff;
+//   z-index: 2;
+//   cursor: pointer;
+//   transition: .2s ease;
+//   transition-property: opacity, visibility;
+//   color: $color-default-white;
+
+//   &::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     inset: 0;
+//     margin: auto;
+//     width: 0;
+//     height: 0;
+//     border: 20px solid transparent;
+//     border-top-width: 15px;
+//     border-bottom-width: 15px;
+//     border-left-color: $color-default-white;
+//     border-right-width: 0;
+//     transition: transform .2s ease;
+//   }
+// }

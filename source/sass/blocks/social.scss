@@ -10,16 +10,18 @@
   border-radius: 50%;
 
   @include hover-focus {
+    outline: none;
     background-color: $color-accent-blue;
     color: $color-default-white;
   }
 
   @include active {
     background-color: #102654;
+    color: $color-default-white;
   }
 
   &:disabled {
-    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    background-color: rgba(#ffffff, 30%);
     color: $color-default-navy;
   }
 
