@@ -99,6 +99,8 @@
   background: transparent;
   border: none;
 
+//Градиент-бордер
+
   &::before {
     content: "";
     position: absolute;
@@ -110,7 +112,7 @@
     mask-composite: exclude;
   }
 
-  // 83deg, #003D85 0%, #B80027 88.54%
+  // Градиент-круг
 
   &::after {
     content: "";

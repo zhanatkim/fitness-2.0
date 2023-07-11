@@ -26,10 +26,17 @@
       font-size: 2.6rem;
     }
   }
-// ФИтнес-центр
+// кроссфит тайтл
   &--large {
+    font-size: 5.125rem;
+
+    @include vp-1199 {
+      font-size: 3rem;
+    }
+  }
+// ФИтнес-центр
+  &--xlarge {
     font-size: 5.75rem;
-    letter-spacing: 5%;
     @include vp-1199 {
       font-size: 4.5rem;
     }

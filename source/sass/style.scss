@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -35,6 +35,9 @@
 @import "blocks/tabs";
 @import "blocks/data-tabs";
 @import "blocks/tariff";
+@import "blocks/event";
+@import "blocks/coaches";
+@import "blocks/swiper";
 @import "blocks/freeclass";
 
 // ---------------------------------

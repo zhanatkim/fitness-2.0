@@ -3,13 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {videoPlay} from './modules/video-player';
 import {initTabs} from './modules/init-tabs';
+import {renderMembership} from './modules/tariff-cards';
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   window.addEventListener('load', () => {
-//     initTabs();
-//   });
-// });
-// ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -20,9 +15,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    renderMembership();
     initTabs();
     videoPlay();
     initModals();

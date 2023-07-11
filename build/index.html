@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
     <title>Фитнес 2.0</title>
-    <link rel="preload" href="fonts/alumni-sans/alumnisans-semibold.woff" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed/robotocondensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <!-- <link rel="preload" href="fonts/alumni-sans/alumnisans-semibold.woff" type="font/woff2" as="font" crossorigin="anonymous"> -->
+    <!-- <link rel="preload" href="fonts/roboto-condensed/robotocondensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous"> -->
+    <!-- <link rel="preload" href="fonts/roboto-condensed/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
   </head>
   <body>
     <div class="wrapper">
@@ -32,7 +32,7 @@
           <div class="hero-header__container container">
             <div class="hero-header__inner">
               <p class="hero-header__text title title--small">Омск</p>
-              <h1 class="hero-header__title title title--large">Фитнес центр</h1>
+              <h1 class="hero-header__title title title--xlarge">Фитнес центр</h1>
               <ul class="hero-header__list">
                 <li class="hero-header__item">Тренажёрный зал</li>
                 <li class="hero-header__item">Групповые занятия</li>
@@ -40,7 +40,7 @@
               </ul>
               <a class="hero-header__button button button--dark" href="#membership">Купить абонемент</a>
             </div>
-            <picture class="hero-header__picture">
+            <picture class="hero-header__image">
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero-photo-1x.webp 1x, img/hero-photo-2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-photo-tablet-1x.webp 1x, img/hero-photo-tablet-2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/hero-photo-1x.jpg 1x, img/hero-photo-2x.jpg 2x">
@@ -60,7 +60,7 @@
             </div>
           </div>
           <div class="gym__multimedia">
-            <picture class="gym__photo">
+            <picture class="gym__image">
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-desktop-1x.webp 1x, img/gym-desktop-2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tablet-1x.webp 1x, img/gym-tablet-2x.webp 2x">
               <source type="image/webp" srcset="img/gym-tablet-1x.webp 1x, img/gym-tablet-2x.webp 2x">
@@ -83,7 +83,7 @@
                 </svg>
                 <span class="visually-hidden">Включить видео</span>
               </button>
-              <iframe class="video__player" width="100%" height="100%" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+              <!-- <iframe class="video__player" width="100%" height="100%" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe> -->
             </div>
           </div>
         </section>
@@ -95,47 +95,87 @@
               <button  class="tabs__control" type="button" data-tabs="control">6 месяцев</button>
               <button  class="tabs__control" type="button" data-tabs="control">12 месяцев</button>
             </div>
-            <div class="tabs__content" data-tabs="content">
-
-              <div class="tabs__element tariff" data-tabs="element">
-                <div class="tariff__card">
-                  <h3 class="tariff__title">С тренером</h3>
-                  <p class="tariff__feature">12 занятий</p>
-                  <span class="tariff__price">5000</span>
-                  <a class="button" href="#">купить абонемент</a>
-                </div>
-              </div>
-
-              <div class="tabs__element tariff" data-tabs="element">
-                <div class="tariff__card">
-                  <h3 class="tariff__title title">С тренером</h3>
-                  <p class="tariff__feature">12 занятий</p>
-                  <span class="tariff__price">30000</span>
-                  <a class="button" href="#">купить абонемент</a>
-                </div>
-              </div>
-
-              <div class="tabs__element tariff" data-tabs="element">
-                <div class="tariff__card">
-                  <h3 class="tariff__title title">С тренером</h3>
-                  <p class="tariff__feature">12 занятий</p>
-                  <span class="tariff__price">5000</span>
-                  <a class="button" href="#">купить абонемент</a>
-                </div>
-              </div>
-
-            </div>
+            <div class="tabs__content" data-tabs="content"></div>
           </div>
         </section>
-        <section class="supergames"></section>
-        <section class="coaches" id="coaches"></section>
+        <section class="event">
+          <div class="event__container">
+            <div class="event__wrapper">
+              <div class="event__inner">
+                <h2 class="event__title title title--large">SUPER GAMES</h2>
+                <div class="event__date">
+                  <table class="event__day">
+                    <thead>
+                      <tr>
+                        <th colspan="2">Дата</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th rowspan="2">7</th>
+                        <td>Марта</td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="event__time">
+                    <thead>
+                      <tr>
+                        <th>Время</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>12:00</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <p class="event__text">Ежегодные соревнования по CrossFit</p>
+              <a class="event__button button button--dark">заполнить заявку</a>
+            </div>
+            <picture class="event__image">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/supergames-desktop-1x.webp 1x, img/supergames-desktop-2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/supergames-tablet-1x.webp 1x, img/supergames-tablet-2x.webp 2x">
+              <source type="image/webp" srcset="img/supergames-mobile-1x.webp 1x, img/supergames-mobile-2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/supergames-desktop-1x.jpg 1x, img/supergames-desktop-2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/supergames-tablet-1x.jpg 1x, img/supergames-tablet-2x.jpg 2x">
+              <img src="img/supergames-mobile-1x.jpg 1x, img/supergames-mobile-2x.jpg 2x" alt="Постер соревнования по кроссфиту">
+            </picture>
+          </div>
+
+        </section>
+        <section class="coaches" id="coaches">
+          <h2 class="coaches__title title title--medium">Тренеры</h2>
+          <div class="coaches__swiper swiper">
+            <div class="swiper__wrapper swiper-wrapper">
+              <div class="swiper__slide swiper-slide">Slide 1</div>
+              <div class="swiper__slide swiper-slide">Slide 2</div>
+              <div class="swiper__slide swiper-slide">Slide 3</div>
+              <div class="swiper__slide swiper-slide">Slide 4</div>
+              <div class="swiper__slide swiper-slide">Slide 5</div>
+              <div class="swiper__slide swiper-slide">Slide 6</div>
+              <div class="swiper__slide swiper-slide">Slide 7</div>
+              <div class="swiper__slide swiper-slide">Slide 8</div>
+              <div class="swiper__slide swiper-slide">Slide 9</div>
+            </div>
+
+            <div class="swiper__button swiper__button--prev swiper-button-prev"></div>
+            <div class="swiper__button swiper__button--next swiper-button-next"></div>
+
+            <div class="swiper-pagination"></div>
+
+          </div>
+
+        </section>
         <section class="advantages"></section>
         <section class="promo" id="promo"></section>
         <section class="faq"></section>
         <section class="feedback"></section>
         <section class="freeclass">
-
-
         </section>
         <section class="contacts"></section>
       </main>
@@ -196,13 +236,19 @@
           </ul>
         <!-- </div> -->
       </footer>
-
-      <template>
+<!-- Шаблон для карточек тарифов -->
+      <template id="card">
         <div class="tariff__card">
-          <h3 class="tariff__title title">С тренером</h3>
-          <p class="tariff__feature">12 занятий</p>
-          <span class="tariff__price">5000</span>
-          <a class="button" href="#">купить абонемент</a>
+          <h3 class="tariff__title"></h3>
+          <p class="tariff__feature"></p>
+          <p class="tariff__inner">
+            <span class="tariff__price"></span>
+            <svg width="30" height="42">
+              <use xlink:href="img/sprite.svg#icon-rouble"></use>
+            </svg>
+          </p>
+          <a class="tariff__button button button--light" href="#">купить абонемент</a>
+          <span class="tariff__bg"></span>
         </div>
       </template>
     </div>

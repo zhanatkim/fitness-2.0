@@ -1,19 +1,50 @@
 .button {
   font-size: 0.75em;
+  line-height: 1em;
   font-family: $ff-default;
   font-weight: 700;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  background-color: transparent;
+  border: none;
   // padding: 22px 54px;
 
   &--dark {
     color: $color-default-white;
-    background-color: transparent;
-    border: 4px solid $color-default-white;
+    box-shadow: 0 0 0 4px $color-default-white;
+
+    @include hover-focus {
+      background-color: $color-default-white;
+      color: $color-accent-blue;
+    }
+
+    @include active {
+      color: $color-default-navy
+    }
+
+    @include disabled {
+      color: rgba($color-default-white, 0.5);
+      box-shadow: 0 0 0 4px rgba($color-default-white, 0.5);
+    }
 
   }
 
   &--light {
     color: $color-default-navy;
+    box-shadow: 0 0 0 2px $color-default-navy;
+    @include hover-focus {
+      background: $color-grd-vertical;
+      color: $color-default-white;
+      box-shadow: none;
+    }
+
+    @include active {
+      color: rgba($color-default-white, 0.7);
+    }
+
+    @include disabled {
+      color: rgba($color-default-navy, 0.3);
+      box-shadow: 0 0 0 4px rgba($color-default-navy, 0.3);
+    }
   }
 }

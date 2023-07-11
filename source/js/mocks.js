@@ -1,56 +1,32 @@
-export const TARIFFS = [
+export const tariff = [
   {
     id: 1,
-    name: '1 месяц',
-    price: [
-      {
-        feature: 'с тренером',
-        price: 5000,
-      },
-      {
-        feature: 'с 8:00 до 17:00',
-        price: 1700,
-      },
-      {
-        feature: 'с 8:00 до 22:00 ',
-        price: 2700,
-      }
-    ],
+    title: 'с тренером',
+    feature: '12 занятий',
+    price: 5000,
   },
   {
     id: 2,
-    name: '6 месяцев',
-    price: [
-      {
-        feature: 'с тренером',
-        price: 30000,
-      },
-      {
-        feature: 'с 8:00 до 17:00',
-        price: 10000,
-      },
-      {
-        feature: 'с 8:00 до 22:00 ',
-        price: 16000,
-      }
-    ],
+    title: 'Дневной',
+    feature: 'с 8:00 до 17:00',
+    price: 1700,
   },
   {
     id: 3,
-    name: '12 месяцев',
-    price: [
-      {
-        feature: 'с тренером',
-        price: 58000,
-      },
-      {
-        feature: 'с 8:00 до 17:00',
-        price: 18000,
-      },
-      {
-        feature: 'с 8:00 до 22:00 ',
-        price: 30000,
-      }
-    ],
+    title: 'Полный день',
+    feature: 'с 8:00 до 22:00 ',
+    price: 2700,
   }
 ];
+
+export const tariffForHalfYear = [...tariff].map((el) => ({...el, price: el.price * 6 * 0.9}));
+export const tariffForFullYear = [...tariff].map((el) => ({...el, price: el.price * 12 * 0.8}));
+
+// export const tariffForHalfYear = [...tariff].map((item) => {
+//   item.price = item.price * 6 * 0.9;
+//   return item;
+// });
+// export const tariffForFullYear = [...tariff].map((item) => {
+//   item.price = item.price * 12 * 0.8;
+//   return item;
+// });
