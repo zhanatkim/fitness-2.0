@@ -1,16 +1,176 @@
 .coaches {
   width: 100%;
-  height: 600px;
-  padding: 0 calc(50% - 580px);
+  padding: 0 calc(50% - 620px);
+  padding-top: 105px;
+  padding-bottom: 105px;
+
 
   @include vp-1199 {
     // padding: 0 calc(50% - 339px);
     padding: 0 101px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
     padding: 0 47px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.coaches__title {
+  width: 100%;
+  padding: 0 calc(50% - 580px);
+  padding-bottom: 48px;
+
+  @include vp-1199{
+    padding-bottom: 31px;
+    text-align: center;
+  }
+  @include vp-767 {
+    padding-bottom: 50px;
+  }
+}
+
+.coaches__swiper {
+  width: 100%;
+  padding: 0 calc(50% - 580px);
+}
+
+.coaches__inner {
+  position: relative;
+  width: 260px;
+  height: 294px;
+
+  @include vp-1199{
+    width: 268px;
+    height: 294px;
+  }
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.coaches__inner img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.coaches__name {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $color-default-white;
+  text-align: center;
+}
+
+.coaches__button {
+  @include hover-focus {
+    opacity: 0.3;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: calc(50% - 28px);
+    //   left: calc(50% - 28px);
+    //   width: 56px;
+    //   height: 56px;
+    //   border-radius: 50%;
+    //   border: 1px solid $color-default-navy;
+    //   z-index: 2;
+    // }
   }
 
+  @include active {
+    opacity: 0.7;
+    // color: $color-default-white;
+    // opacity: 1;
+    // &::before {
+    //   background-color: $color-default-navy;
+    // }
 
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: calc(50% - 28px);
+    //   left: calc(50% - 28px);
+    //   width: 56px;
+    //   height: 56px;
+    //   border-radius: 50%;
+    //   border: 1px solid $color-default-navy;
+    // }
+
+
+  }
+
+  color: $color-default-navy;
+  font-size: 16px;
+  line-height: 32px;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+
+}
+
+.coaches__slide {
+  @include hover {
+    .coaches__feature {
+      display: flex;
+    }
+  }
+
+  @include vp-767 {
+    @include active {
+      .coaches__feature {
+        display: flex;
+      }
+    }
+  }
+}
+
+.coaches__feature {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(16, 38, 84, 0.89);
+  color: $color-default-white;
+  z-index: 2;
+
+  & h3, p, ul {
+    max-width: 60%;
+    margin: 0;
+    padding: 0;
+  }
+
+  & h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  & ul {
+    padding-top: 45px;
+    display: grid;
+    gap: 24px;
+    font-size: 14px;
+  }
 }
