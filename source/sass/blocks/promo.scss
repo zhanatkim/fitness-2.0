@@ -46,6 +46,8 @@
   color: $color-default-white;
   background-color: $color-bg-banner;
   padding: 45px;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__coupons {
@@ -120,5 +122,23 @@
       }
     }
   }
-
 }
+
+.promo__span {
+  font-size: 28px;
+  line-height: 156%;
+}
+
+.promo__sum {
+  font-size: 70px;
+  line-height: 156%;
+}
+
+.promo__text {
+  font-size: 18px;
+}
+
+.promo__subtitle {
+  font-size: 26px;
+}
+
