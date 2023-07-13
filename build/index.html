@@ -390,7 +390,16 @@
                 <p class="promo__text">Безлимитный абонемент в тренажерный зал</p>
                 <a class="promo__link promo__link--white" href="#">Подробнее</a>
               </div>
-              <picture></picture>
+              <div class="promo__image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/promo-desktop-1x.webp 1x, img/promo-desktop-2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-tablet-1x.webp 1x, img/promo-tablet-2x.webp 2x">
+                  <source type="image/webp" srcset="img/promo-mobile-1x.webp 1x, img/promo-mobile-2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/promo-desktop-1x.jpg 1x, img/promo-desktop-2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/promo-tablet-1x.jpg 1x, img/promo-tablet-2x.jpg 2x">
+                  <img src="img/promo-mobile-1x.jpg 1x, img/promo-mobile-2x.jpg 2x" alt="спортсменка в синем">
+                </picture>
+              </div>
             </div>
             <div class="promo__coupons">
               <div class="promo__coupon">

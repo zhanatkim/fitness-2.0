@@ -6,10 +6,14 @@
 
   @include vp-1199 {
     padding: 0 calc(50% - 339px);
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
     padding: 0 15px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -21,9 +25,11 @@
 .promo__wrapper {
   width: 100%;
   display: flex;
+  gap: 40px;
 
   @include vp-1199 {
     flex-direction: column;
+    gap: 30px;
   }
 
   @include vp-767 {
@@ -31,34 +37,78 @@
   }
 }
 
-.promo__poster,
-.promo__coupons {
-  display: flex;
-  width: 50%;
+.promo__poster {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 399px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 290px;
+    margin: 0 auto;
+  }
 }
 
-.promo__poster {
-  display: flex;
+.promo__image {
+  width: 100%;
+  height: 100%;
+}
+
+
+.promo__image picture img {
+  height: 100%;
+  width: 100%;
+  max-width: 280px;
+  object-fit: cover;
+  @include vp-1199 {
+    max-width: 399px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+  }
 }
 
 .promo__inner {
-  width: 50%;
   color: $color-default-white;
   background-color: $color-bg-banner;
   padding: 45px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+
+  @include vp-1199 {
+
+  }
+
+  @include vp-767 {
+    align-items: center;
+  }
 }
 
 .promo__coupons {
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  gap: 40px;
+  width: 50%;
+
+  @include vp-1199 {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    max-width: 290px;
+    margin: 0 auto;
+  }
 }
 
 .promo__coupon {
   border: 7px solid transparent;
   background: linear-gradient($color-default-white, $color-default-white) padding-box, $color-grd-vertical border-box;
-  padding: 35px;
+  padding: 28px;
 }
 
 
@@ -66,7 +116,7 @@
   text-transform: uppercase;
   position: relative;
   letter-spacing: 0.05em;
-  font-weight: 700px;
+  font-weight: 700;
 
   &::before {
     content: "";
@@ -126,19 +176,39 @@
 
 .promo__span {
   font-size: 28px;
-  line-height: 156%;
+  line-height: 100%;
 }
 
 .promo__sum {
   font-size: 70px;
-  line-height: 156%;
+  line-height: 100%;
+  padding-top: 19px;
+}
+
+.promo__subtitle,
+.promo__text,
+.promo__description {
+  padding: 0;
+  margin: 0;
 }
 
 .promo__text {
   font-size: 18px;
+  padding-top: 35px;
+  padding-bottom: 198px;
+
+  @include vp-767 {
+    padding-bottom: 40px;
+    text-align: center;
+  }
 }
 
 .promo__subtitle {
+  padding-bottom: 20px;
   font-size: 26px;
+}
+
+.promo__description {
+  padding-bottom: 80px;
 }
 
