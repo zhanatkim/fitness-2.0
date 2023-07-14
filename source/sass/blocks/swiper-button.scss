@@ -1,0 +1,46 @@
+.swiper-button {
+  @include hover-focus {
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 28px);
+      left: calc(50% - 28px);
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 1px solid $color-default-navy;
+      z-index: -1;
+
+      @include vp-767 {
+        width: 33px;
+        height: 33px;
+        top: calc(50% - 17px);
+        left: calc(50% - 15.5px);
+      }
+    }
+  }
+
+  @include active {
+    &::after {
+      color:  $color-default-white;
+    }
+    &::before {
+      background-color: $color-default-navy;
+    }
+  }
+
+  color: $color-default-navy;
+  width: 16px;
+  height: 32px;
+
+  &::after {
+    color:  $color-default-navy;
+  }
+
+  @include vp-767 {
+    &::after {
+      font-size: 10px;
+      line-height: 19px;
+    }
+  }
+}

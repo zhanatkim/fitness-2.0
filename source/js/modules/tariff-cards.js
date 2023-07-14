@@ -1,9 +1,30 @@
 
-import {tariff, tariffForHalfYear, tariffForFullYear} from '../mocks';
-
+const tariff = [
+  {
+    id: 1,
+    title: 'с тренером',
+    feature: '12 занятий',
+    price: 5000,
+  },
+  {
+    id: 2,
+    title: 'Дневной',
+    feature: 'с 8:00 до 17:00',
+    price: 1700,
+  },
+  {
+    id: 3,
+    title: 'Полный день',
+    feature: 'с 8:00 до 22:00 ',
+    price: 2700,
+  }
+];
 const container = document.querySelector('.tabs__content');
 const cardTemplate = document.querySelector('#card').content;
 const cardContentFragment = document.createDocumentFragment();
+
+// const tariffForHalfYear = [...tariff].map((el) => ({...el, price: el.price * 6 * 0.9}));
+// const tariffForFullYear = [...tariff].map((el) => ({...el, price: el.price * 12 * 0.8}));
 
 const createCard = ({id, title, feature, price}) => {
   const cardTemplateClone = cardTemplate.cloneNode(true);
@@ -30,6 +51,17 @@ const createCardsList = (cards) => {
 export const renderMembership = () => {
   container.querySelectorAll('.tabs__element').forEach((el) => el.remove());
   createCardsList(tariff);
-  createCardsList(tariffForHalfYear);
-  createCardsList(tariffForFullYear);
+
+  const tariffHalfYear = [...tariff].map((item) => {
+    item.price = item.price * 6 * 0.9;
+    return item;
+  });
+
+  createCardsList(tariffHalfYear);
+  const tariffFullYear = [...tariff].map((item) => {
+    item.price = item.price * 12 * 0.8;
+    return item;
+  });
+
+  createCardsList(tariffFullYear);
 };

@@ -1,10 +1,8 @@
 // Swiper 7.4.1
-
-import './vendor/focus-visible-polyfill';
 import Swiper from './vendor/swiper';
+import './vendor/focus-visible-polyfill';
 
-
-const swiper = new Swiper('.swiper', {
+const coachesSwiper = new Swiper('.coaches__swiper', {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 10,
@@ -19,9 +17,22 @@ const swiper = new Swiper('.swiper', {
     },
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.coaches__button--next',
+    prevEl: '.coaches__button--prev',
   },
+  mousewheel: true,
+  keyboard: true,
 });
 
-swiper();
+const feedbackSwiper = new Swiper('.feedback__swiper', {
+  // slidesPerView: 1,
+  // spaceBetween: 10,
+  navigation: {
+    nextEl: '.feedback__button--next',
+    prevEl: '.feedback__button--prev',
+  },
+  mousewheel: true,
+  keyboard: true,
+});
+coachesSwiper();
+feedbackSwiper();

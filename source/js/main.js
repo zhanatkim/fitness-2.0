@@ -2,9 +2,10 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {videoPlay} from './modules/video-player';
-import {initTabs} from './modules/init-tabs';
+import {initTabs} from './modules/tabs/init-tabs';
 import {renderMembership} from './modules/tariff-cards';
-
+import {setCurrentChapter} from './modules/faq';
+import {initAccordions} from './modules/accordions/init-accordion';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -23,6 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     videoPlay();
     initModals();
+    setCurrentChapter();
+    initAccordions();
     const form = new Form();
     window.form = form;
     form.init();

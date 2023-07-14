@@ -10,9 +10,6 @@
   // padding: 22px 54px;
 
   &--dark {
-    color: $color-default-white;
-    box-shadow: 0 0 0 4px $color-default-white;
-
     @include hover-focus {
       background-color: $color-default-white;
       color: $color-accent-blue;
@@ -27,11 +24,11 @@
       box-shadow: 0 0 0 4px rgba($color-default-white, 0.5);
     }
 
+    color: $color-default-white;
+    box-shadow: 0 0 0 4px $color-default-white;
   }
 
   &--light {
-    color: $color-default-navy;
-    box-shadow: 0 0 0 2px $color-default-navy;
     @include hover-focus {
       background: $color-grd-vertical;
       color: $color-default-white;
@@ -46,5 +43,7 @@
       color: rgba($color-default-navy, 0.3);
       box-shadow: 0 0 0 4px rgba($color-default-navy, 0.3);
     }
+    color: $color-default-navy;
+    box-shadow: 0 0 0 2px $color-default-navy;
   }
 }
