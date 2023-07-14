@@ -1,33 +1,15 @@
 .freeclass {
-  // background-color: #333333;
-  color: white;
+  width: 100%;
+  background-color: $color-default-navy;
+  color: $color-default-white;
+  padding-left: calc(50% - 290px);
+  padding-top: 56px;
+  padding-bottom: 70px;
 }
 
-.gradient-border {
-  color: black;
-  font-size: 16px;
-  border-radius: 999px;
-  // padding: 10px 3rem;
-  display: inline-block;
-  position: relative;
-  background: transparent;
-  border: none;
-  height: 100px;
-  width: 100px;
-}
-
-.gradient-border::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 2px;
-  border-radius: 9999px;
-  background: linear-gradient(rgba(#003eb7, 20%), rgba(#ed0233, 20%));
-// linear-gradient(0deg, #FFFFFF, #FFFFFF);
-  // -webkit-mask:
-  //    linear-gradient(#fff 0 0) content-box,
-  //    linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  // -webkit-mask-composite: xor;
-  mask-composite: exclude;
+.freeclass__title {
+  font-weight: 800;
+  line-height: 156%;
+  padding-bottom: 12px;
+  // input padding-top 10px
 }

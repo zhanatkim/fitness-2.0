@@ -1,0 +1,19 @@
+.contacts {
+  width: 100%;
+  padding-left: 120px;
+  padding-right: calc(50% - 290px);
+  padding-top: 56px;
+  padding-bottom: 70px;
+  border-top: 1px solid #74819c;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
