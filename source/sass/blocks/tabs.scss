@@ -36,7 +36,7 @@
   font-family: $ff-default;
   color: $color-default-navy;
   font-weight: 400;
-  padding: 20px 0;
+  padding: 10px 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -76,7 +76,9 @@
 
 .tabs__content {
   transition: height 0.3s;
+
 }
+
 
 .tabs__element {
   width: 100%;

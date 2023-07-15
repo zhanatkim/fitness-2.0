@@ -2,16 +2,18 @@
   position: relative;
   width: 100%;
   padding: 0 103px;
-  padding-top: 120px;
-  padding-bottom: 235px;
+  // padding: 0 calc(50% - 580px);
+  padding-top: 118px;
+  padding-bottom: 233px;
   display: grid;
-  grid-template-columns: 1fr 660px;
+  grid-template-columns: 1fr 57%;
   justify-content: space-between;
   gap: 85px;
 
   @include vp-1199 {
     grid-template-columns: 1fr;
-    padding: 0 calc(50% - 339px);
+    padding: 0 45px;
+    // padding: 0 calc(50% - 339px);
     padding-top: 100px;
     padding-bottom: 183px;
     gap: 50px;
@@ -27,10 +29,71 @@
   }
 }
 
+
+.gym__multimedia {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-self: first baseline;
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 45px;
+  }
+}
+
+.gym__image {
+  width: 100%;
+
+  @include vp-767 {
+    // display: block;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    // width: 100%;
+    // height: auto;
+  }
+}
+
+.gym__image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.gym__video {
+  // width: 364px;
+  width: 55.15%;
+  aspect-ratio: 16 / 10;
+  position: absolute;
+  top: 71%;
+  left: -9.54%;
+  // left: -63px;
+  // top: 288px;
+
+  @include vp-1199 {
+    // width: 266px;
+    width: 39.23%;
+    top: 73.72%;
+    left: calc(50% - 19.6%);
+    // top: 261px;
+    // left: calc(50% - 266px / 2);
+  }
+
+  @include vp-767 {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+
 .gym__inner {
   display: flex;
   flex-direction: column;
-  padding-top: 49px;
+  // align-self: center;
+  padding-top: 40px;
   padding-left: 15%;
 
   @include vp-1199 {
@@ -40,7 +103,7 @@
 
   @include vp-767 {
     align-items: flex-start;
-    padding: 0 calc(50% - 145px);
+    padding: 0 15px;
   }
 }
 
@@ -61,8 +124,8 @@
   margin: 0;
   padding: 0;
   font-size: 1.125rem;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding-top: 6px;
+  padding-bottom: 35px;
 
   @include vp-1199 {
     padding-top: 6px;
@@ -75,8 +138,7 @@
 
 }
 
-.gym__indent {
-  margin: 0;
+.gym__text p {
   padding: 5px 0;
   font-weight: 300;
 
@@ -92,58 +154,5 @@
   @include vp-767 {
     padding: 0;
     text-align: start;
-  }
-
-}
-
-.gym__multimedia {
-  position: relative;
-  width: 100%;
-
-  @include vp-1199 {
-
-  }
-
-  @include vp-767 {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-  }
-}
-
-.gym__image {
-  display: flex;
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-
-  @include vp-767 {
-    // position: absolute;
-    // left: 0;
-    // top: 0;
-    // width: 100%;
-    // height: auto;
-  }
-}
-
-.gym__video {
-  width: 364px;
-  aspect-ratio: 16 / 10;
-  position: absolute;
-  left: -63px;
-  top: 288px;
-
-  @include vp-1199 {
-    width: 266px;
-    top: 261px;
-    left: calc(50% - 266px / 2);
-  }
-
-  @include vp-767 {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
   }
 }

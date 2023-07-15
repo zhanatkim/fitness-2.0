@@ -3,7 +3,7 @@
   padding: 0;
   font-family: $ff-title;
   font-weight: 600;
-  line-height: normal;
+  line-height: 100%;
   letter-spacing: 0.03em;
 
   @include vp-767 {
@@ -20,7 +20,7 @@
   }
 // Абонементы, тренеры
   &--medium {
-    font-size: 3rem;
+    font-size: 54px;
 
     @include vp-1199 {
       font-size: 2.6rem;
@@ -39,6 +39,8 @@
   &--xlarge {
     font-size: 5.75rem;
     text-transform: uppercase;
+    -webkit-text-stroke: 2px $color-default-white;
+    letter-spacing: 0.05em;
     @include vp-1199 {
       font-size: 4.5rem;
     }

@@ -1,20 +1,17 @@
 .coaches {
   width: 100%;
   padding: 0 calc(50% - 620px);
-  padding-top: 105px;
   padding-bottom: 105px;
 
 
   @include vp-1199 {
     // padding: 0 calc(50% - 339px);
     padding: 0 101px;
-    padding-top: 100px;
     padding-bottom: 100px;
   }
 
   @include vp-767 {
     padding: 0 47px;
-    padding-top: 70px;
     padding-bottom: 70px;
   }
 }
@@ -22,7 +19,7 @@
 .coaches__title {
   width: 100%;
   padding: 0 calc(50% - 580px);
-  padding-bottom: 48px;
+  padding-bottom: 55px;
 
   @include vp-1199{
     padding-bottom: 31px;

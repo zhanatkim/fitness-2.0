@@ -1,4 +1,40 @@
 .button {
+  // @include hover-focus {
+  //   &--dark {
+  //     background-color: $color-default-white;
+  //     color: $color-accent-blue;
+  //   }
+
+  //   &--light {
+  //     background: $color-grd-vertical;
+  //     color: $color-default-white;
+  //     box-shadow: none;
+  //   }
+  // }
+
+  // @include active {
+  //   &--dark {
+  //     color: $color-default-navy;
+  //   }
+
+  //   &--light {
+  //     color: red;
+  //     // color: rgba($color-default-white, 0.7);
+  //   }
+  // }
+
+  // @include disabled {
+  //   &--dark {
+  //     color: rgba($color-default-white, 0.5);
+  //     box-shadow: 0 0 0 4px rgba($color-default-white, 0.5);
+  //   }
+
+  //   &--light {
+  //     color: rgba($color-default-navy, 0.3);
+  //     box-shadow: 0 0 0 4px rgba($color-default-navy, 0.3);
+  //   }
+  // }
+
   font-size: 0.75em;
   line-height: 1em;
   font-family: $ff-default;
@@ -7,7 +43,7 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  // padding: 22px 54px;
+  cursor: pointer;
 
   &--dark {
     @include hover-focus {
@@ -16,7 +52,7 @@
     }
 
     @include active {
-      color: $color-default-navy
+      color: $color-default-navy;
     }
 
     @include disabled {

@@ -18,33 +18,35 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <a class="page-header__link" href="index.html">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/svg/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
             <img src="img/svg/logo-mobile.svg" alt="Логотип фитнес-центра SUPERGYM.">
           </picture>
         </a>
-        <a class="page-header__link page-header__link--phone" href="tel:88005555555">8-800-555-55-55</a>
+        <a class="page-header__phone" href="tel:88005555555">8-800-555-55-55</a>
       </header>
       <main class="main-container">
         <div class="hero-header">
-          <div class="hero-header__container container">
+          <div class="hero-header__wrapper">
+            <span class="hero-header__text">Омск</span>
             <div class="hero-header__inner">
-              <p class="hero-header__text title title--small">Омск</p>
               <h1 class="hero-header__title title title--xlarge">Фитнес центр</h1>
               <ul class="hero-header__list">
                 <li class="hero-header__item">Тренажёрный зал</li>
                 <li class="hero-header__item">Групповые занятия</li>
                 <li class="hero-header__item">Кардио-зона</li>
               </ul>
-              <a class="hero-header__button button button--dark" href="#membership">Купить абонемент</a>
             </div>
-            <picture class="hero-header__image">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero-photo-1x.webp 1x, img/hero-photo-2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-photo-tablet-1x.webp 1x, img/hero-photo-tablet-2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/hero-photo-1x.jpg 1x, img/hero-photo-2x.jpg 2x">
-              <img src="img/hero-photo-tablet-1x.jpg 1x, img/hero-photo-tablet-2x.jpg 2x" alt="атлет-супермен">
+            <a class="hero-header__button button button--dark" href="#membership">Купить абонемент</a>
+          </div>
+          <div class="hero-header__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero-desktop-1x.webp 1x, img/hero-desktop-2x.webp 2x">
+              <source type="image/webp" srcset="img/hero-tablet-1x.webp 1x, img/hero-tablet-2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/hero-desktop-1x.jpg 1x, img/hero-desktop-2x.jpg 2x">
+              <img srcset="img/hero-tablet-2x.jpg 2x" src="img/hero-tablet-1x.jpg" alt="Атлет-супермен">
             </picture>
           </div>
         </div>
@@ -53,54 +55,60 @@
             <h2 class="gym__title title">Тренажерный зал</h2>
             <p class="gym__feature">Просторный зал площадью 900 кв/м</p>
             <div class="gym__text">
-              <p class="gym__indent">Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для&nbsp;укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.
+              <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для&nbsp;укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.
               </p>
-              <p class="gym__indent">В зале расположены отдельная зона для&nbsp;Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для&nbsp;различных видов групповых занятий.
+              <p>В зале расположены отдельная зона для&nbsp;Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для&nbsp;различных видов групповых занятий.
               </p>
             </div>
           </div>
           <div class="gym__multimedia">
-            <picture class="gym__image">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-desktop-1x.webp 1x, img/gym-desktop-2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tablet-1x.webp 1x, img/gym-tablet-2x.webp 2x">
-              <source type="image/webp" srcset="img/gym-tablet-1x.webp 1x, img/gym-tablet-2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/gym-desktop-1x.jpg 1x, img/gym-desktop-2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/gym-tablet-1x.jpg 1x, img/gym-tablet-2x.jpg 2x">
-              <img src="img/gym-mobile-1x.jpg 1x, img/gym-mobile-2x.jpg 2x" alt="Фотография тренажерного зала">
-            </picture>
+            <div class="gym__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-desktop-1x.webp 1x, img/gym-desktop-2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tablet-1x.webp 1x, img/gym-tablet-2x.webp 2x">
+                <source type="image/webp" srcset="img/gym-tablet-1x.webp 1x, img/gym-tablet-2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/gym-desktop-1x.jpg 1x, img/gym-desktop-2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/gym-tablet-1x.jpg 1x, img/gym-tablet-2x.jpg 2x">
+                <img src="img/gym-mobile-1x.jpg" srcset="/gym-mobile-2x.jpg 2x" alt="Tренажерный зал">
+              </picture>
+            </div>
             <div class="gym__video video" data-is-playing>
-              <!-- <picture class="video__placeholder">
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-video-cover-desktop-1x.webp 1x, img/gym-video-cover-desktop-2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-video-cover-tablet-1x.webp 1x, img/gym-video-cover-tablet-2x.webp 2x">
-                <source type="image/webp" srcset="img/gym-video-cover-mobile-1x.webp 1x, img/gym-video-cover-mobile-2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/gym-video-cover-desktop-1x.jpg 1x, img/gym-video-cover-desktop-2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/gym-video-cover-tablet-1x.jpg 1x, img/gym-video-cover-tablet-2x.jpg 2x">
-                <img src="img/gym-video-cover-mobile-1x.jpg 1x, img/gym-video-cover-mobile-2x.jpg 2x" alt="Видео тренажерного зала">
-              </picture> -->
-              <button class="video__button" type="button"">
+              <div class="video__placeholder">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-video-cover-desktop-1x.webp 1x, img/gym-video-cover-desktop-2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-video-cover-tablet-1x.webp 1x, img/gym-video-cover-tablet-2x.webp 2x">
+                  <source type="image/webp" srcset="img/gym-video-cover-mobile-1x.webp 1x, img/gym-video-cover-mobile-2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gym-video-cover-desktop-1x.jpg 1x, img/gym-video-cover-desktop-2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gym-video-cover-tablet-1x.jpg 1x, img/gym-video-cover-tablet-2x.jpg 2x">
+                  <img src="img/gym-video-cover-mobile-1x.jpg" srcset="/gym-video-cover-mobile-2x.jpg 2x" alt="Видео тренажерного зала">
+                </picture>
+              </div>
+              <button class="video__button" type="button">
                 <svg width="9" height="12" fill="currentColor">
                   <use xlink:href="img/sprite.svg#icon-play"></use>
                 </svg>
                 <span class="visually-hidden">Включить видео</span>
               </button>
-              <!-- <iframe class="video__player" width="100%" height="100%" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe> -->
+              <iframe class="video__player" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="autoplay" allowfullscreen></iframe>
             </div>
           </div>
         </section>
         <section class="membership" id="membership">
           <h2 class="membership__title title title--medium">Абонементы</h2>
-          <div class="membership__tabs tabs" data-tabs="parent">
-            <div class="tabs__controls" data-tabs="controls">
-              <button class="tabs__control" type="button" data-tabs="control">1 месяц</button>
-              <button  class="tabs__control" type="button" data-tabs="control">6 месяцев</button>
-              <button  class="tabs__control" type="button" data-tabs="control">12 месяцев</button>
+          <div class="membership__wrapper">
+            <div class="membership__tabs tabs" data-tabs="parent">
+              <div class="tabs__controls" data-tabs="controls">
+                <button class="tabs__control" type="button" data-tabs="control">1 месяц</button>
+                <button  class="tabs__control" type="button" data-tabs="control">6 месяцев</button>
+                <button  class="tabs__control" type="button" data-tabs="control">12 месяцев</button>
+              </div>
+              <div class="tabs__content" data-tabs="content"></div>
             </div>
-            <div class="tabs__content" data-tabs="content"></div>
           </div>
         </section>
         <section class="event">
           <div class="event__container">
-            <div class="event__wrapper">
+            <div class="event__poster">
               <div class="event__inner">
                 <h2 class="event__title title title--large">SUPER GAMES</h2>
                 <div class="event__date">
@@ -137,16 +145,17 @@
               <p class="event__text">Ежегодные соревнования по CrossFit</p>
               <a class="event__button button button--dark">заполнить заявку</a>
             </div>
-            <picture class="event__image">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/supergames-desktop-1x.webp 1x, img/supergames-desktop-2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/supergames-tablet-1x.webp 1x, img/supergames-tablet-2x.webp 2x">
-              <source type="image/webp" srcset="img/supergames-mobile-1x.webp 1x, img/supergames-mobile-2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/supergames-desktop-1x.jpg 1x, img/supergames-desktop-2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/supergames-tablet-1x.jpg 1x, img/supergames-tablet-2x.jpg 2x">
-              <img src="img/supergames-mobile-1x.jpg 1x, img/supergames-mobile-2x.jpg 2x" alt="Постер соревнования по кроссфиту">
-            </picture>
+            <div class="event__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/supergames-desktop-1x.webp 1x, img/supergames-desktop-2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/supergames-tablet-1x.webp 1x, img/supergames-tablet-2x.webp 2x">
+                <source type="image/webp" srcset="img/supergames-mobile-1x.webp 1x, img/supergames-mobile-2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/supergames-desktop-1x.jpg 1x, img/supergames-desktop-2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/supergames-tablet-1x.jpg 1x, img/supergames-tablet-2x.jpg 2x">
+                <img src="img/supergames-mobile-1x.jpg" srcset="img/supergames-mobile-2x.jpg 2x" alt="Постер соревнования по кроссфиту">
+              </picture>
+            </div>
           </div>
-
         </section>
         <section class="coaches" id="coaches">
           <h2 class="coaches__title title title--medium">Тренеры</h2>
@@ -156,7 +165,7 @@
                 <div class="coaches__inner">
                   <picture>
                     <source type="image/webp" srcset="img/coaches/coach-1-1x.webp 1x, img/coaches/coach-1-2x.webp 2x">
-                    <img src="img/coaches/coach-1-1x.jpg 1x, img/coaches/coach-1-2x.jpg 2x" alt="фотография тренера">
+                    <img src="img/coaches/coach-1-1x.jpg" srcset="/coaches/coach-1-2x.jpg 2x" alt="фотография тренера">
                   </picture>
                   <p class="coaches__name">Анна Павлова</p>
                   <div class="coaches__feature">
@@ -174,7 +183,7 @@
                 <div class="coaches__inner">
                   <picture>
                     <source type="image/webp" srcset="img/coaches/coach-2-1x.webp 1x, img/coaches/coach-2-2x.webp 2x">
-                    <img src="img/coaches/coach-2-1x.jpg 1x, img/coaches/coach-2-2x.jpg 2x" alt="фотография тренера">
+                    <img src="img/coaches/coach-2-1x.jpg" srcset="/coaches/coach-2-2x.jpg 2x" alt="фотография тренера">
                   </picture>
 
                   <p class="coaches__name">Алексей Лавров</p>
@@ -193,11 +202,11 @@
                 <div class="coaches__inner">
                   <picture>
                     <source type="image/webp" srcset="img/coaches/coach-2-1x.webp 1x, img/coaches/coach-2-2x.webp 2x">
-                    <img src="img/coaches/coach-2-1x.jpg 1x, img/coaches/coach-2-2x.jpg 2x" alt="фотография тренера">
+                    <img src="img/coaches/coach-2-1x.jpg" srcset="/coaches/coach-2-2x.jpg 2x" alt="фотография тренера">
                   </picture>
-                  <p class="coaches__name">Александр Пашков</p>
+                  <p class="coaches__name">Алексей Лавров</p>
                   <div class="coaches__feature">
-                    <h3>Александр Пашков</h3>
+                    <h3>Алексей Лавров</h3>
                     <p>CrossFit</p>
                     <ul>
                       <li>Certified Level 3 Trainer</li>
@@ -211,7 +220,7 @@
                 <div class="coaches__inner">
                   <picture>
                     <source type="image/webp" srcset="img/coaches/coach-4-1x.webp 1x, img/coaches/coach-4-2x.webp 2x">
-                    <img src="img/coaches/coach-4-1x.jpg 1x, img/coaches/coach-4-2x.jpg 2x" alt="фотография тренера">
+                    <img src="img/coaches/coach-4-1x.jpg" srcset="/coaches/coach-4-2x.jpg 2x" alt="фотография тренера">
                   </picture>
                   <p class="coaches__name">Мария Кетова</p>
                   <div class="coaches__feature">
@@ -229,11 +238,11 @@
                 <div class="coaches__inner">
                   <picture>
                     <source type="image/webp" srcset="img/coaches/coach-1-1x.webp 1x, img/coaches/coach-1-2x.webp 2x">
-                    <img src="img/coaches/coach-1-1x.jpg 1x, img/coaches/coach-1-2x.jpg 2x" alt="фотография тренера">
+                    <img src="img/coaches/coach-1-1x.jpg" srcset="/coaches/coach-1-2x.jpg 2x" alt="фотография тренера">
                   </picture>
                   <p class="coaches__name">Анна Павлова</p>
                   <div class="coaches__feature">
-                    <h3>Александр Пашков</h3>
+                    <h3>Анна Павлова</h3>
                     <p>CrossFit</p>
                     <ul>
                       <li>Certified Level 3 Trainer</li>
@@ -247,7 +256,7 @@
                 <div class="coaches__inner">
                   <picture>
                     <source type="image/webp" srcset="img/coaches/coach-2-1x.webp 1x, img/coaches/coach-2-2x.webp 2x">
-                    <img src="img/coaches/coach-2-1x.jpg 1x, img/coaches/coach-2-2x.jpg 2x" alt="фотография тренера">
+                    <img src="img/coaches/coach-2-1x.jpg" srcset="/coaches/coach-2-2x.jpg 2x" alt="фотография тренера">
                   </picture>
                   <p class="coaches__name">Алексей Лавров</p>
                   <div class="coaches__feature">
@@ -265,7 +274,7 @@
                 <div class="coaches__inner">
                   <picture>
                     <source type="image/webp" srcset="img/coaches/coach-2-1x.webp 1x, img/coaches/coach-2-2x.webp 2x">
-                    <img src="img/coaches/coach-2-1x.jpg 1x, img/coaches/coach-2-2x.jpg 2x" alt="фотография тренера">
+                    <img src="img/coaches/coach-2-1x.jpg" srcset="/coaches/coach-2-2x.jpg 2x" alt="фотография тренера">
                   </picture>
                   <p class="coaches__name">Александр Пашков</p>
                   <div class="coaches__feature">
@@ -283,7 +292,7 @@
                 <div class="coaches__inner">
                   <picture>
                     <source type="image/webp" srcset="img/coaches/coach-4-1x.webp 1x, img/coaches/coach-4-2x.webp 2x">
-                    <img src="img/coaches/coach-4-1x.jpg 1x, img/coaches/coach-4-2x.jpg 2x" alt="фотография тренера">
+                    <img src="img/coaches/coach-4-1x.jpg" srcset="/coaches/coach-4-2x.jpg 2x" alt="фотография тренера">
                   </picture>
                   <p class="coaches__name">Мария Кетова</p>
                   <div class="coaches__feature">
@@ -378,12 +387,14 @@
         </section>
         <section class="promo" id="promo">
           <h2 class="promo__title title title--medium">Акции</h2>
-          <div class="promo__wrapper">
+          <div class="promo__container">
             <div class="promo__poster">
               <div class="promo__inner">
-                <span class="promo__span">Год</span>
-                <span class="promo__sum">4999</span>
-                <p class="promo__text">Безлимитный абонемент в тренажерный зал</p>
+                <div class="promo__text">
+                  <span class="promo__span">Год</span>
+                  <span class="promo__sum">4999</span>
+                  <p>Безлимитный абонемент в тренажерный зал</p>
+                </div>
                 <a class="promo__link promo__link--white" href="#">Подробнее</a>
               </div>
               <div class="promo__image">
@@ -393,19 +404,23 @@
                   <source type="image/webp" srcset="img/promo-mobile-1x.webp 1x, img/promo-mobile-2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/promo-desktop-1x.jpg 1x, img/promo-desktop-2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/promo-tablet-1x.jpg 1x, img/promo-tablet-2x.jpg 2x">
-                  <img src="img/promo-mobile-1x.jpg 1x, img/promo-mobile-2x.jpg 2x" alt="спортсменка в синем">
+                  <img src="img/promo-mobile-1x.jpg" srcset="img/promo-mobile-2x.jpg 2x" alt="спортсменка в синем">
                 </picture>
               </div>
             </div>
             <div class="promo__coupons">
               <div class="promo__coupon">
-                <h3 class="promo__subtitle">Месяц бесплатно</h3>
-                <p class="promo__description">Приведи друга, получи абонемент в подарок</p>
+                <div class="promo__text">
+                  <h3 class="promo__subtitle">Месяц бесплатно</h3>
+                  <p class="promo__description">Приведи друга, получи абонемент в подарок</p>
+                </div>
                 <a class="promo__link promo__link--navy" href="#">Подробнее</a>
               </div>
               <div class="promo__coupon">
-                <h3 class="promo__subtitle">Скидка 20%</h3>
-                <p class="promo__description">Корпоративный фитнес  с командой</p>
+                <div class="promo__text">
+                  <h3 class="promo__subtitle">Скидка 20%</h3>
+                  <p class="promo__description">Корпоративный фитнес  с командой</p>
+                </div>
                 <a class="promo__link promo__link--navy" href="#">Подробнее</a>
               </div>
             </div>
@@ -656,7 +671,7 @@
                   <div class="feedback__image">
                     <picture>
                       <source type="image/webp" srcset="img/feedback-photo-1x.webp 1x, img/feedback-photo-2x.webp 2x">
-                      <img src="img/feedback-photo-1x.png 1x, img/feedback-photo-2x.png 2x" alt="Анна Орлова">
+                      <img src="img/feedback-photo-1x.png" srcset="img/feedback-photo-2x.png 2x" alt="Анна Орлова">
                     </picture>
                   </div>
                   <h3 class="feedback__name">Анна Орлова</h3>
@@ -668,7 +683,7 @@
                 <div class="feedback__inner">
                   <picture>
                     <source type="image/webp" srcset="img/feedback-photo-1x.webp 1x, img/feedback-photo-2x.webp 2x">
-                    <img src="img/feedback-photo-1x.png 1x, img/feedback-photo-2x.png 2x" alt="Анна Орлова">
+                    <img src="img/feedback-photo-1x.png" srcset="img/feedback-photo-2x.png 2x" alt="Анна Орлова">
                   </picture>
                   <h3 class="feedback__name">Анна Орлова</h3>
                   <p class="feedback__comment">«Хожу в Supergym уже больше года. Зал просторный, даже в вечернее время нет очередей»
@@ -684,16 +699,16 @@
           <h2 class="visually-hidden">Контакты и бесплатное занятие</h2>
           <div class="main-footer__freeclass freeclass">
             <h3 class="freeclass__title title title--medium">Бесплатное занятие</h3>
-            <form class="feedback__form form">
-              <div class="form__wrapper">
+            <form class="freeclass__form" method="post" action="https://echo.htmlacademy.ru/">
+              <div class="freeclass__wrapper">
                 <label>
-                  <input class="form__input" type="text" name="name" placeholder="Имя" data-form-validate required>
+                  <input type="text" name="name" placeholder="Имя" data-form-validate required>
                 </label>
                 <label>
-                  <input class="form__input"  type="tel" name="tel" placeholder="Телефон" data-form-validate data-validate-type="phone" required>
+                  <input type="tel" name="tel" placeholder="Телефон" data-form-validate data-validate-type="phone" required>
                 </label>
               </div>
-              <button class="form__button button button--dark" type="submit">отправить</button>
+              <button class="freeclass__button button button--dark" type="submit">отправить</button>
             </form>
           </div>
           <div class="main-footer__contacts contacts">

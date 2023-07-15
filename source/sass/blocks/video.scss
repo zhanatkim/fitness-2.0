@@ -2,26 +2,6 @@
 .video {
   cursor: pointer;
 
-  background-image: url("../img/gym-video-cover-desktop-1x.webp");
-  background-size: cover;
-  @include retina {
-    background-image: url("../img/gym-video-cover-desktop-2x.webp");
-  }
-
-  @include vp-1199 {
-    background-image: url("../img/gym-video-cover-tablet-1x.webp");
-    @include retina {
-      background-image: url("../img/gym-video-cover-tablet-2x.webp");
-    }
-  }
-
-  @include vp-767 {
-    background-image: url("../img/gym-video-cover-mobile-1x.webp");
-    @include retina {
-      background-image: url("../img/gym-video-cover-mobile-2x.webp");
-    }
-  }
-
   //синяя подложка
   &::before {
     content: "";
@@ -30,6 +10,7 @@
     background-color: rgba(20, 54, 122, 0.50);
     top: 0;
     bottom: 0;
+    z-index: 2;
   }
 
   @include hover-focus {
@@ -59,7 +40,9 @@
   }
 
   &[data-is-playing = "is-playing"] {
-    background-image: none;
+    & .video__placeholder {
+      display: none;
+    }
 
     &::before {
       display: none;
@@ -74,6 +57,19 @@
     }
   }
 
+}
+
+.video__placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.video__placeholder picture img {
+  height: 100%;
 }
 
 .video__player {
@@ -110,6 +106,7 @@
     background: linear-gradient(83deg, rgba(#003d85, 20%) 0%, rgba(#b80027, 20%) 88.54%);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
+    z-index: 3;
   }
 
   // Градиент-круг
@@ -123,11 +120,11 @@
     height: 72%;
     border-radius: 50%;
     background: $color-grd-btn-bg;
-    z-index: 1;
+    z-index: 3;
   }
 
   & svg {
-    z-index: 2;
+    z-index: 4;
     width: 13px;
     height: 17px;
   }
