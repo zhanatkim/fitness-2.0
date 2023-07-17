@@ -1,40 +1,4 @@
 .button {
-  // @include hover-focus {
-  //   &--dark {
-  //     background-color: $color-default-white;
-  //     color: $color-accent-blue;
-  //   }
-
-  //   &--light {
-  //     background: $color-grd-vertical;
-  //     color: $color-default-white;
-  //     box-shadow: none;
-  //   }
-  // }
-
-  // @include active {
-  //   &--dark {
-  //     color: $color-default-navy;
-  //   }
-
-  //   &--light {
-  //     color: red;
-  //     // color: rgba($color-default-white, 0.7);
-  //   }
-  // }
-
-  // @include disabled {
-  //   &--dark {
-  //     color: rgba($color-default-white, 0.5);
-  //     box-shadow: 0 0 0 4px rgba($color-default-white, 0.5);
-  //   }
-
-  //   &--light {
-  //     color: rgba($color-default-navy, 0.3);
-  //     box-shadow: 0 0 0 4px rgba($color-default-navy, 0.3);
-  //   }
-  // }
-
   font-size: 0.75em;
   line-height: 1em;
   font-family: $ff-default;
@@ -44,6 +8,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: background-color $trans-default;;
 
   &--dark {
     @include hover-focus {
@@ -62,6 +27,10 @@
 
     color: $color-default-white;
     box-shadow: 0 0 0 4px $color-default-white;
+
+    @include vp-1199 {
+      box-shadow: 0 0 0 2px $color-default-white;
+    }
   }
 
   &--light {

@@ -1,6 +1,6 @@
 .promo {
   width: 100%;
-  padding: 142px 103px 120px;
+  padding: 135px 103px 120px;
 
   @include vp-1199 {
     padding: 100px 45px;
@@ -12,7 +12,7 @@
 }
 
 .promo__title {
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   text-align: center;
 }
 
@@ -28,7 +28,6 @@
   }
 
   @include vp-767 {
-    padding: 0 15px;
   }
 }
 
@@ -63,8 +62,8 @@
 }
 
 .promo__inner {
-  width: 70%;
-  padding: 45px 0;
+  width: 68%;
+  padding: 40px 0 45px;
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -73,6 +72,7 @@
 
   @include vp-767 {
     align-items: center;
+    padding-bottom: 44px;
   }
 }
 
@@ -98,6 +98,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    gap: 28px;
     max-width: 290px;
     margin: 0 auto;
   }
@@ -110,7 +111,7 @@
   align-items: flex-start;
   border: 7px solid transparent;
   background: linear-gradient($color-default-white, $color-default-white) padding-box, $color-grd-vertical border-box;
-  padding: 28px;
+  padding: 24px 28px 28px;
   min-height: 211px;
 
   @include vp-767 {
@@ -129,7 +130,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
@@ -163,6 +164,10 @@
         visibility: hidden;
       }
     }
+
+    @include vp-767 {
+      margin-top: 30px;
+    }
   }
 
   &--navy {
@@ -190,11 +195,12 @@
 .promo__sum {
   font-size: 70px;
   line-height: 100%;
-  padding-top: 19px;
-  padding-bottom: 35px;
+  padding-top: 3px;
+  padding-bottom: 20px;
 
   @include vp-767 {
-    padding-bottom: 30px;
+    padding-top: 6px;
+    padding-bottom: 15px;
   }
 }
 
@@ -214,6 +220,7 @@
 }
 
 .promo__subtitle {
-  padding-bottom: 20px;
+  padding-bottom: 8px;
   font-size: 26px;
+  line-height: 100%;
 }

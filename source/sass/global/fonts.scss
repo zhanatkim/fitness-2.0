@@ -21,8 +21,8 @@
   font-weight: 600;
   font-family: "Alumni Sans";
   font-display: swap;
-  src: url("../../fonts/alumni-sans/AlumniSans-SemiBold.woff2") format("woff2"),
-  url("../../fonts/alumni-sans/AlumniSans-SemiBold.woff") format("woff");;
+  src: url("../fonts/alumni-sans/AlumniSans-SemiBold.woff2") format("woff2"),
+  url("../fonts/alumni-sans/AlumniSans-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -30,6 +30,6 @@
   font-weight: 400;
   font-family: "Rouble";
   font-display: swap;
-  src: url("../../fonts/rouble.woff2") format("woff2"),
-  url("../../fonts/rouble.woff") format("woff");;
+  src: url("../fonts/rouble.woff2") format("woff2"),
+  url("../fonts/rouble.woff") format("woff");
 }

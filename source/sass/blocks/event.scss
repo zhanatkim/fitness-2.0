@@ -1,13 +1,13 @@
 .event {
   width: 100%;
-  padding: 120px 103px 110px;
+  padding: 120px 103px 107px;
 
   @include vp-1199 {
     padding: 100px 45px;
   }
 
   @include vp-767 {
-    padding: 70px 15px;
+    padding: 73px 15px 65px;
   }
 }
 
@@ -37,15 +37,15 @@
 }
 
 .event__poster {
-  width: 69%;
+  width: 67.8%;
   align-self: center;
   justify-self: center;
   display: flex;
   flex-direction: column;
 
   @include vp-767 {
-    padding-top: 50px;
-    padding-bottom: 51px;
+    padding-top: 42px;
+    padding-bottom: 53px;
   }
 }
 
@@ -55,23 +55,35 @@
   gap: 50px;
   align-items: center;
   align-self: center;
+  padding-top: 10px;
 
   @include vp-1199 {
     gap: 29px;
+  }
+
+  @include vp-767 {
+    padding-top: 0;
   }
 }
 
 .event__title {
   max-width: 58%;
   line-height: 96%;
+  text-align: center;
 }
 
 .event__text {
-  padding: 33px 0 55px;
+  font-size: 18px;
+  padding: 20px 0 50px;
   margin: 0;
 
   @include vp-1199 {
-    padding: 15px 0 35px;
+    padding: 10px 0 37px;
+    font-size: 12px;
+  }
+
+  @include vp-767 {
+    padding: 0 0 30px;
     font-size: 12px;
   }
 }
@@ -79,11 +91,15 @@
 .event__button {
   display: flex;
   justify-content: center;
-  padding: 29px;
+  padding: 25px;
 
   @include vp-1199 {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px;
+  }
+
+  @include vp-767 {
+    font-size: 10px;
+    padding: 13px;
   }
 
 }
@@ -92,11 +108,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 32px;
+  gap: 20px;
   align-items: flex-start;
 
   @include vp-1199 {
-    gap: 13px;
+    gap: 0;
   }
 }
 
@@ -108,9 +124,9 @@
 
   & thead {
     display: flex;
-    padding-bottom: 13px;
+    padding-bottom: 10px;
     margin-bottom: 10px;
-    box-shadow: 0 1px $color-default-white;
+    border-bottom: 1px solid $color-default-white;
 
     & th {
       font-weight: 400;
@@ -129,8 +145,8 @@
   @include vp-1199 {
 
     & thead {
-      padding-bottom: 6px;
-      margin-bottom: 5px;
+      padding-bottom: 4px;
+      margin-bottom: 0;
 
       th {
         font-size: 12px;

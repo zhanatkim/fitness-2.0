@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
     <title>Фитнес 2.0</title>
-    <!-- <link rel="preload" href="fonts/alumni-sans/alumnisans-semibold.woff" type="font/woff2" as="font" crossorigin="anonymous"> -->
-    <!-- <link rel="preload" href="fonts/roboto-condensed/robotocondensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous"> -->
-    <!-- <link rel="preload" href="fonts/roboto-condensed/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous"> -->
+    <link rel="preload" href="fonts/alumni-sans/alumnisans-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed/robotocondensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+    <link rel="icon" href="img/favicons/favicon.png" type="image/png+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   </head>
   <body>
     <div class="wrapper">
@@ -52,7 +51,7 @@
         </div>
         <section class="gym">
           <div class="gym__inner">
-            <h2 class="gym__title title">Тренажерный зал</h2>
+            <h2 class="gym__title title title--medium">Тренажерный зал</h2>
             <p class="gym__feature">Просторный зал площадью 900 кв/м</p>
             <div class="gym__text">
               <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для&nbsp;укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.
@@ -66,7 +65,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-desktop-1x.webp 1x, img/gym-desktop-2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tablet-1x.webp 1x, img/gym-tablet-2x.webp 2x">
-                <source type="image/webp" srcset="img/gym-tablet-1x.webp 1x, img/gym-tablet-2x.webp 2x">
+                <source type="image/webp" srcset="img/gym-mobile-1x.webp 1x, img/gym-mobile-2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/gym-desktop-1x.jpg 1x, img/gym-desktop-2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/gym-tablet-1x.jpg 1x, img/gym-tablet-2x.jpg 2x">
                 <img src="img/gym-mobile-1x.jpg" srcset="/gym-mobile-2x.jpg 2x" alt="Tренажерный зал">
@@ -333,14 +332,15 @@
                 <li class="advantages__subitem">
                   <div class="advantages__card">
                     <div class="advantages__inner">
-                      <span class="advantages__number advantages__number--gradient">350</span>
-                      <span>мест</span>
+                      <span class="advantages__number advantages__number--gradient">70</span>
+                      <span>машин</span>
                     </div>
                     <div class="advantages__text">
-                      <p class="advantages__name">Комфорт</p>
-                      <p class="advantages__feature">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+                      <p class="advantages__name">Собственная парковка</p>
+                      <p class="advantages__feature">Вы всегда найдете место для своей машины на нашей парковке</p>
                     </div>
                   </div>
+
                 </li>
               </ul>
             </li>
@@ -360,12 +360,12 @@
                 <li class="advantages__subitem">
                   <div class="advantages__card">
                     <div class="advantages__inner">
-                      <span class="advantages__number advantages__number--gradient">70</span>
-                      <span>машин</span>
+                      <span class="advantages__number advantages__number--gradient">350</span>
+                      <span>мест</span>
                     </div>
                     <div class="advantages__text">
-                      <p class="advantages__name">Собственная парковка</p>
-                      <p class="advantages__feature">Вы всегда найдете место для своей машины на нашей парковке</p>
+                      <p class="advantages__name">Комфорт</p>
+                      <p class="advantages__feature">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                     </div>
                   </div>
                 </li>
@@ -552,7 +552,7 @@
               <div class="faq__chapter chapter" data-id="service" data-accordion="parent">
                 <div class="chapter__element" data-accordion="element">
                   <button class="chapter__button" type="button" data-accordion="button">
-                    <span>Предлагает ли клуб услуги по консультированию по вопросам питания?</span>
+                    <span>Предлагает ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?</span>
                     <span class="chapter__mark"></span>
                   </button>
                   <div class="chapter__content" data-accordion="content">
@@ -697,16 +697,20 @@
         </section>
         <section class="main-footer">
           <h2 class="visually-hidden">Контакты и бесплатное занятие</h2>
-          <div class="main-footer__freeclass freeclass">
+          <div class="main-footer__freeclass freeclass" data-form-validate data-callback="base">
             <h3 class="freeclass__title title title--medium">Бесплатное занятие</h3>
-            <form class="freeclass__form" method="post" action="https://echo.htmlacademy.ru/">
+            <form class="freeclass__form" method="post" action="https://echo.htmlacademy.ru/" novalidate>
               <div class="freeclass__wrapper">
-                <label>
-                  <input type="text" name="name" placeholder="Имя" data-form-validate required>
-                </label>
-                <label>
-                  <input type="tel" name="tel" placeholder="Телефон" data-form-validate data-validate-type="phone" required>
-                </label>
+                <div class="freeclass__custom-input custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <label>
+                    <input type="text" name="name" placeholder="Имя" required>
+                  </label>
+                </div>
+                <div class="freeclass__custom-input custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
+                  <label>
+                    <input type="tel" name="tel" placeholder="Телефон" required>
+                  </label>
+                </div>
               </div>
               <button class="freeclass__button button button--dark" type="submit">отправить</button>
             </form>

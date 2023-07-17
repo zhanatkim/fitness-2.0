@@ -14,7 +14,7 @@
 
   @include vp-1199 {
     padding: 0 calc(50% - 339px);
-    padding-top: 40px;
+    padding-top: 43px;
   }
 
   @include vp-767 {
@@ -25,14 +25,28 @@
 
 .page-header__logo {
   padding: 10px 0;
+  @include vp-1199 {
+    padding: 7px 0;
+  }
 }
 
 .page-header__phone {
   color: $color-default-white;
-font-size: 1.63em;
-font-family: $ff-title;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.78px;
+  font-size: 26px;
+  font-family: $ff-title;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+
+  }
 }

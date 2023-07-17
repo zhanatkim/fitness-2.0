@@ -15,13 +15,12 @@
   @include vp-767 {
     padding: 0 15px;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 65px;
   }
 }
 
 .faq__title {
-  padding-top: 5px;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
 
   @include vp-1199 {
     text-align: center;
@@ -81,6 +80,12 @@
   text-transform: none;
   font-size: 18px;
   font-weight: 500;
+  box-shadow: 0 0 0 1px rgba(16, 38, 84, 0.20);
+
+  @include vp-767 {
+    font-size: 16px;
+    padding: 13px;
+  }
 
 }
 

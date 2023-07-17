@@ -2,7 +2,7 @@
 const tariff = [
   {
     id: 1,
-    title: 'с тренером',
+    title: 'С тренером',
     feature: '12 занятий',
     price: 5000,
   },
