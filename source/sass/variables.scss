@@ -20,7 +20,6 @@ $color-grd-vertical:               linear-gradient(151deg, #ed0233 0%, #003eb7 1
 
 $color-bg-light:                    #f8f9fc;
 $color-bg-banner:                   #ed0233;
-$color-bg-grd:                      conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
 $color-bg-navy:                     #1c3374;
 $color-bg-footer:                   #030a1a;
 $color-error:                       #ff121f;
@@ -36,9 +35,6 @@ $ff-title:                          "Alumni Sans", "Arial", sans-serif;
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
-
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
-
 // // Animation
 // // ---------------------------------
 
@@ -56,10 +52,8 @@ $trans-600:                         0.6s $tf-default;
 $vp-320:                            320px;
 $vp-768:                            768px;
 $vp-1200:                           1200px;
-$vp-1366:                           1366px;
 
 // Retina
 // ---------------------------------
 $retina-dppx:                       2dppx;
 $retina-dpi:                        144dpi;
-// $retina-dppx:                       1.5dppx;

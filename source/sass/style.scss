@@ -9,19 +9,16 @@
 // ---------------------------------
 @import "variables";
 @import "mixins";
+@import "global/container";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/button";
-@import "blocks/modal";
 @import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
 @import "blocks/page-header";
 @import "blocks/hero-header";
 @import "blocks/title";
