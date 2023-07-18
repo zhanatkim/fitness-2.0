@@ -1,5 +1,4 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {videoPlay} from './modules/video-player';
 import {initTabs} from './modules/tabs/init-tabs';
@@ -23,7 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
     renderMembership();
     initTabs();
     videoPlay();
-    initModals();
     setCurrentChapter();
     initAccordions();
     const form = new Form();

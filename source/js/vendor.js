@@ -25,8 +25,6 @@ const coachesSwiper = new Swiper('.coaches__swiper', {
 });
 
 const feedbackSwiper = new Swiper('.feedback__swiper', {
-  // slidesPerView: 1,
-  // spaceBetween: 10,
   navigation: {
     nextEl: '.feedback__button--next',
     prevEl: '.feedback__button--prev',
