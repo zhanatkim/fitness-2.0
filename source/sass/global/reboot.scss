@@ -37,8 +37,6 @@ a {
   text-decoration: none;
 }
 
-
-
 img,
 video {
   display: block;
@@ -50,7 +48,9 @@ textarea {
   resize: none;
 }
 
-tr, td, th, p {
+tr,
+td,
+th {
   padding: 0;
   margin: 0;
 }

@@ -9,8 +9,8 @@
 
   @include vp-1199 {
     grid-template-columns: 1fr;
-    padding: 100px 45px 183px;
-    gap: 50px;
+    padding: 104px 45px 183px;
+    gap: 40px;
   }
 
   @include vp-767 {
@@ -53,7 +53,7 @@
 
   @include vp-1199 {
     width: 39.23%;
-    top: 73.72%;
+    top: 75.72%;
     left: calc(50% - 19.6%);
   }
 
@@ -90,10 +90,13 @@
   font-size: 48px;
 
   @include vp-1199 {
+    align-self: flex-start;
+    padding-left: 200px;
     font-size: 42px;
   }
 
   @include vp-767 {
+    padding-left: 0;
     font-size: 32px;
   }
 }
@@ -101,12 +104,13 @@
 .gym__feature {
   margin: 0;
   padding: 0;
-  font-size: 1.125rem;
+  font-size: 18px;
   padding-top: 9px;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 
   @include vp-1199 {
     padding-top: 2px;
+    padding-bottom: 36px;
   }
 
   @include vp-767 {
@@ -115,21 +119,28 @@
   }
 }
 
-.gym__text p {
-  padding: 5px 0;
-  font-weight: 300;
+.gym__text {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 
-  @include vp-1199 {
-    padding: 0 13%;
-    text-align: center;
-
-    &:last-child {
-      display: none;
-    }
-  }
-
-  @include vp-767 {
+  & p {
+    margin: 0;
     padding: 0;
-    text-align: start;
+    font-weight: 300;
+
+    @include vp-1199 {
+      padding: 0 13%;
+      text-align: center;
+
+      &:last-child {
+        display: none;
+      }
+    }
+
+    @include vp-767 {
+      padding: 0;
+      text-align: start;
+    }
   }
 }

@@ -8,17 +8,28 @@
   background-color: $color-bg-light;
 
   @include vp-1199 {
-    padding: 100px 0;
+    padding: 102px 0 100px;
   }
 
   @include vp-767 {
-    padding: 66px 15px;
+    padding: 66px 15px 70px;
   }
 }
 
 .membership__title {
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
+
+  @include vp-1199 {
+    text-align: start;
+    padding-left: calc(50% - 96px);
+    padding-bottom: 10px;
+  }
+
+  @include vp-767 {
+    padding-left: 73px;
+    padding-bottom: 7px
+  }
 }
 
 .membership__wrapper {

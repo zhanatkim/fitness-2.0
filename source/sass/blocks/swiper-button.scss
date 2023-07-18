@@ -22,8 +22,9 @@
 
   @include active {
     &::after {
-      color:  $color-default-white;
+      color: $color-default-white;
     }
+
     &::before {
       background-color: $color-default-navy;
     }
@@ -32,15 +33,15 @@
   color: $color-default-navy;
 
   &::after {
-    color:  $color-default-navy;
+    color: $color-default-navy;
     font-size: 32px;
     line-height: 32px;
   }
 
   @include vp-767 {
     &::after {
-      font-size: 10px;
-      line-height: 19px;
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 }

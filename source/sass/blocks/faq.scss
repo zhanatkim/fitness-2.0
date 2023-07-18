@@ -13,9 +13,7 @@
   }
 
   @include vp-767 {
-    padding: 0 15px;
-    padding-top: 70px;
-    padding-bottom: 65px;
+    padding: 70px 15px 70px;
   }
 }
 
@@ -27,18 +25,18 @@
   }
 
   @include vp-767 {
-    padding-bottom: 30px;
+    padding-bottom: 33px;
   }
-
 }
 
 .faq__container {
   display: grid;
   grid-template-columns: 260px 1fr;
-  gap: 40px;
+  gap: 34px;
 
   @include vp-1199 {
     grid-template-columns: 1fr;
+    gap: 38px;
   }
 
   @include vp-767 {
@@ -71,12 +69,10 @@
   text-transform: none;
   font-size: 18px;
   font-weight: 500;
-  box-shadow: 0 0 0 1px rgba(16, 38, 84, 0.20);
+  box-shadow: 0 0 0 1px rgba(16, 38, 84, 0.2);
 
   @include vp-767 {
     font-size: 16px;
     padding: 13px;
   }
 }
-
-

@@ -1,16 +1,16 @@
 .coaches {
   width: 100%;
-  padding: 0 calc(50% - 620px);
+  padding: 0 calc(50% - 642px);
   padding-bottom: 105px;
 
 
   @include vp-1199 {
-    padding: 0 calc(50% - 339px);
+    padding: 0 calc(50% - 345px);
     padding-bottom: 100px;
   }
 
   @include vp-767 {
-    padding: 0 47px;
+    padding: 0;
     padding-bottom: 70px;
   }
 }
@@ -20,12 +20,14 @@
   padding: 0 calc(50% - 580px);
   padding-bottom: 48px;
 
-  @include vp-1199{
+  @include vp-1199 {
     padding-bottom: 31px;
-    text-align: center;
+    padding-left: calc(50% - 63px);
   }
+
   @include vp-767 {
     padding-bottom: 42px;
+    padding-left: 111px;
   }
 }
 
@@ -33,7 +35,7 @@
   padding: 0 calc(50% - 580px);
 
   @include vp-1199 {
-    padding: 0 calc(50% - 331px);
+    padding: 0 calc(50% - 282px);
   }
 }
 
@@ -42,10 +44,11 @@
   width: 260px;
   height: 294px;
 
-  @include vp-1199{
+  @include vp-1199 {
     width: 268px;
     height: 294px;
   }
+
   @include vp-767 {
     width: 226px;
     height: 274px;
@@ -67,7 +70,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   font-size: 18px;
   font-weight: 700;
   color: $color-default-white;
@@ -75,22 +78,29 @@
 }
 
 .coaches__button {
-
   &--prev {
     left: 0;
+
+    @include vp-767 {
+      left: 6px;
+    }
   }
 
   &--next {
     right: 0;
-  }
 
+    @include vp-767 {
+      right: 6px;
+    }
+  }
 }
 
 .coaches__slide {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @include hover {
     .coaches__feature {
       display: flex;
@@ -119,7 +129,9 @@
   color: $color-default-white;
   z-index: 2;
 
-  & h3, p, ul {
+  & h3,
+  p,
+  ul {
     max-width: 60%;
     margin: 0;
     padding: 0;

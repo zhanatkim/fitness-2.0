@@ -3,7 +3,6 @@
   padding: 0;
   font-family: $ff-title;
   font-weight: 600;
-  // line-height: 100%;
   line-height: 119%;
   letter-spacing: 0.03em;
 
@@ -11,7 +10,6 @@
     text-transform: none;
   }
 
-// Абонементы, тренеры
   &--medium {
     font-size: 54px;
 
@@ -23,24 +21,25 @@
       font-size: 32px;
     }
   }
-// кроссфит тайтл
+
   &--large {
-    font-size: 5.125rem;
+    font-size: 82px;
     text-transform: uppercase;
 
     @include vp-1199 {
-      font-size: 3rem;
+      font-size: 48px;
     }
   }
-// Фитнес-центр
+
   &--xlarge {
-    font-size: 5.75rem;
+    font-size: 92px;
     text-transform: uppercase;
     -webkit-text-stroke: 2px $color-default-white;
     line-height: 119%;
     letter-spacing: 0.05em;
+
     @include vp-1199 {
-      font-size: 4.5rem;
+      font-size: 72px;
       text-transform: none;
     }
   }

@@ -7,7 +7,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    background-color: rgba(20, 54, 122, 0.50);
+    background-color: rgba(20, 54, 122, 0.5);
     top: 0;
     bottom: 0;
     z-index: 2;
@@ -21,9 +21,11 @@
     .video__button {
       color: $color-default-navy;
       border-image: $color-default-navy;
+
       &::before {
         background: $color-default-navy;
       }
+
       &::after {
         background: $color-default-white;
       }
@@ -39,7 +41,9 @@
     }
   }
 
-  &[data-is-playing = "is-playing"] {
+  // запуск видео
+
+  &[data-is-playing="is-playing"] {
     & .video__placeholder {
       display: none;
     }
@@ -54,6 +58,14 @@
 
     .video__player {
       visibility: visible;
+    }
+  }
+
+  // видео не работает
+
+  &[data-is-playing="is-out"] {
+    .video__button {
+      visibility: hidden;
     }
   }
 }
@@ -94,7 +106,7 @@
   background: transparent;
   border: none;
 
-//Градиент-бордер
+  //Градиент-бордер
 
   &::before {
     content: "";
@@ -103,7 +115,7 @@
     padding: 2px;
     border-radius: 50%;
     background: linear-gradient(83deg, rgba(#003d85, 20%) 0%, rgba(#b80027, 20%) 88.54%);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient($color-default-white 0 0) content-box, linear-gradient($color-default-white 0 0);
     mask-composite: exclude;
     z-index: 3;
   }
@@ -140,9 +152,11 @@
 
   &:disabled {
     color: rgba($color-default-navy, 40%);
+
     &::before {
       background: rgba($color-default-navy, 40%);
     }
+
     &::after {
       background: $color-default-white;
     }

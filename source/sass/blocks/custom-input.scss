@@ -46,7 +46,7 @@
     bottom: 35px;
     color: $color-error;
     opacity: 0;
-    transition: opacity $trans-default;;
+    transition: opacity $trans-default;
   }
 
   &.is-invalid {

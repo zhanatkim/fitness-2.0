@@ -8,12 +8,11 @@
 }
 
 .chapter__element.is-active {
-
   .chapter__button {
     padding-bottom: 8px;
 
     @include vp-767 {
-      padding-bottom: 15px;
+      padding-bottom: 13px;
     }
   }
 }
@@ -42,7 +41,7 @@
   }
 
   border: none;
-  border-top: 1px solid rgba(28, 51, 116, 0.20);
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
   cursor: pointer;
   background-color: transparent;
   color: $color-default-navy;
@@ -51,13 +50,20 @@
   font-size: 24px;
   line-height: 120%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
   padding-top: 25px;
   padding-bottom: 24px;
   display: grid;
   grid-template-columns: 1fr 52px;
 
   &:last-child {
-    border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+    border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+  }
+
+  @include vp-1199 {
+    padding-left: 0;
   }
 
   @include vp-767 {
@@ -96,7 +102,7 @@
   &::after {
     height: 42.86%;
     width: 1px;
-    top:  calc(50% - 21%);
+    top: calc(50% - 21%);
     left: 50%;
   }
 
@@ -110,14 +116,20 @@
   padding: 0;
   margin: 0;
   width: 80%;
+  padding-left: 5px;
   padding-bottom: 23px;
   font-size: 18px;
   line-height: 140%;
   z-index: 2;
 
+  @include vp-1199 {
+    padding-left: 0;
+  }
+
   @include vp-767 {
     font-size: 16px;
     width: 100%;
+    padding-bottom: 18px;
   }
 }
 

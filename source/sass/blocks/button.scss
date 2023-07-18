@@ -1,5 +1,5 @@
 .button {
-  font-size: 0.75em;
+  font-size: 12px;
   line-height: 1em;
   font-family: $ff-default;
   font-weight: 700;
@@ -8,7 +8,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transition: background-color $trans-default;;
+  transition: background-color $trans-default;
 
   &--dark {
     @include hover-focus {

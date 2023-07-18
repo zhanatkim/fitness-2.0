@@ -28,7 +28,8 @@
   display: flex;
   justify-content: space-between;
   max-width: calc(100% - 97px);
-  min-width: calc(100% - 97px - 266px);
+  // min-width: calc(100% - 97px - 266px);
+  min-width: calc(100% - 97px - 259px);
 
 
   @include vp-1199 {
@@ -115,6 +116,7 @@
 
   @include active {
     outline: none;
+
     &::after {
       display: none;
     }

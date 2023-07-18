@@ -9,16 +9,11 @@
   padding-bottom: 64px;
 
   @include vp-1199 {
-    padding: 0 calc(50% - 339px);
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 54px 163px 72px 133px;
   }
 
   @include vp-767 {
-    padding-top: 55px;
-    padding-bottom: 70px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 59px 15px 70px;
   }
 }
 
@@ -28,10 +23,13 @@
   padding-bottom: 3px;
   letter-spacing: 0.04em;
 
-  @include vp-767 {
-    padding-bottom: 25px;
+  @include vp-1199 {
+    padding-bottom: 10px;
   }
 
+  @include vp-767 {
+    padding-bottom: 20px;
+  }
 }
 
 .freeclass__form {
@@ -50,11 +48,15 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 
-  @include vp-767 {
-    grid-template-columns: 1fr;
-    padding-bottom: 35px;
+  @include vp-1199 {
+    gap: 60px;
   }
 
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    padding-bottom: 41px;
+    gap: 26px;
+  }
 }
 
 .freeclass__button {
