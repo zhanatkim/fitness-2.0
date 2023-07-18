@@ -50,7 +50,6 @@
     grid-template-areas:
      "photo title"
      "text text";
-
   }
 }
 
@@ -60,14 +59,14 @@
   height: 80px;
   grid-area: photo;
 
+  & picture img {
+    object-fit: cover;
+  }
+
   @include vp-767 {
     width: 68px;
     height: 68px;
     justify-self: end;
-  }
-
-  & picture img {
-    object-fit: cover;
   }
 }
 
@@ -95,7 +94,6 @@
   @include vp-767 {
     text-align: center;
   }
-
 }
 
 .feedback__button {

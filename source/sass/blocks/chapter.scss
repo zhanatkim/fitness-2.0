@@ -2,6 +2,7 @@
 .chapter {
   display: none;
 }
+
 .chapter.is-open {
   display: grid;
 }
@@ -15,7 +16,6 @@
       padding-bottom: 15px;
     }
   }
-
 }
 
 
@@ -40,7 +40,7 @@
   &:disabled {
     opacity: 0.3;
   }
-// выравнивание в кнопке сомнительно спан справа увеличивает line-height
+
   border: none;
   border-top: 1px solid rgba(28, 51, 116, 0.20);
   cursor: pointer;
@@ -89,7 +89,6 @@
   &::before {
     width: 42.86%;
     height: 1px;
-    // top: calc(50% - 0.5px);
     top: 50%;
     left: calc(50% - 21%);
   }

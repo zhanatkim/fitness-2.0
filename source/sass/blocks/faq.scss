@@ -64,19 +64,10 @@
 .faq__content {
   display: flex;
   width: 100%;
-
-  @include vp-1199 {
-
-  }
-
-  @include vp-767 {
-
-  }
 }
 
 .faq__button {
   padding: 18px;
-  // align-self: self-start;
   text-transform: none;
   font-size: 18px;
   font-weight: 500;
@@ -86,7 +77,6 @@
     font-size: 16px;
     padding: 13px;
   }
-
 }
 
 

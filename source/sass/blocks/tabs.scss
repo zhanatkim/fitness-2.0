@@ -10,14 +10,6 @@
   margin: 0 auto;
   margin-bottom: 40px;
 
-  @include vp-1199 {
-    margin-bottom: 45px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 34px;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -26,16 +18,16 @@
     right: 0;
     height: 2px;
     background-color: rgba(120, 120, 120, 0.20);
-
-
   }
 
   @include vp-1199 {
+    margin-bottom: 45px;
     flex-wrap: wrap;
     gap: 54px;
   }
 
   @include vp-767 {
+    margin-bottom: 34px;
     gap: 45px;
   }
 }
@@ -53,15 +45,6 @@
   opacity: 0.5;
   min-width: auto;
   justify-content: center;
-
-  @include vp-1199 {
-    font-size: 18px;
-  }
-
-  @include vp-767 {
-    font-size: 16px;
-    padding-bottom: 15px;
-  }
 
   &.is-active {
     position: relative;
@@ -82,13 +65,20 @@
   &:disabled {
     opacity: 0.3;
   }
+
+  @include vp-1199 {
+    font-size: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
 }
 
 .tabs__content {
   transition: height 0.3s;
-
 }
-
 
 .tabs__element {
   width: 100%;

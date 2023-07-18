@@ -7,6 +7,7 @@
   padding-left: calc(50% - 237px);
   padding-top: 56px;
   padding-bottom: 64px;
+
   @include vp-1199 {
     padding: 0 calc(50% - 339px);
     padding-top: 70px;

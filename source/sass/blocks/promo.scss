@@ -26,9 +26,6 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
-
-  @include vp-767 {
-  }
 }
 
 .promo__poster {
@@ -125,7 +122,6 @@
   position: relative;
   letter-spacing: 0.05em;
   font-weight: 700;
-  // align-self: flex-start;
 
   &::before {
     content: "";
@@ -212,7 +208,6 @@
 }
 
 .promo__text p {
-  // font-size: 18px;
 
   @include vp-767 {
     text-align: center;
