@@ -12,6 +12,7 @@
 
   &--dark {
     @include hover-focus {
+      outline: none;
       background-color: $color-default-white;
       color: $color-accent-blue;
     }
@@ -35,6 +36,7 @@
 
   &--light {
     @include hover-focus {
+      outline: none;
       background: $color-grd-vertical;
       color: $color-default-white;
       box-shadow: none;

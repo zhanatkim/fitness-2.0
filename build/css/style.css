@@ -1432,11 +1432,13 @@ button,
 }
 @media (hover: hover) {
   .button--dark:hover:not(.focus-visible) {
+    outline: none;
     background-color: #ffffff;
     color: #103aae;
   }
 }
 .button--dark.focus-visible:focus {
+  outline: none;
   background-color: #ffffff;
   color: #103aae;
 }
@@ -1461,6 +1463,7 @@ button,
 }
 @media (hover: hover) {
   .button--light:hover:not(.focus-visible) {
+    outline: none;
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     color: #ffffff;
     -webkit-box-shadow: none;
@@ -1468,6 +1471,7 @@ button,
   }
 }
 .button--light.focus-visible:focus {
+  outline: none;
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   color: #ffffff;
   -webkit-box-shadow: none;
@@ -2226,7 +2230,6 @@ button,
 }
 @media (max-width: 767px) {
   .gym__title {
-    padding-left: 0;
     font-size: 32px;
   }
 }
@@ -2472,7 +2475,6 @@ button,
 }
 @media (max-width: 767px) {
   .membership__title {
-    padding-left: 73px;
     padding-bottom: 7px;
   }
 }
@@ -3078,7 +3080,6 @@ button,
 @media (max-width: 767px) {
   .coaches__title {
     padding-bottom: 42px;
-    padding-left: 111px;
   }
 }
 
@@ -3218,8 +3219,13 @@ button,
 
 .swiper-button {
   color: #102654;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
 }
 @media (hover: hover) {
+  .swiper-button:hover:not(.focus-visible) {
+    outline: none;
+  }
   .swiper-button:hover:not(.focus-visible)::before {
     content: "";
     position: absolute;
@@ -3239,6 +3245,9 @@ button,
     top: calc(50% - 17px);
     left: calc(50% - 15.5px);
   }
+}
+.swiper-button.focus-visible:focus {
+  outline: none;
 }
 .swiper-button.focus-visible:focus::before {
   content: "";
@@ -3303,8 +3312,6 @@ button,
 }
 @media (max-width: 767px) {
   .advantages__title {
-    text-align: start;
-    padding-left: 38px;
     padding-bottom: 47px;
   }
 }
@@ -3593,11 +3600,6 @@ button,
 @media (max-width: 1199px) {
   .promo__title {
     padding-bottom: 41px;
-  }
-}
-@media (max-width: 767px) {
-  .promo__title {
-    padding-left: 109px;
   }
 }
 
@@ -4140,7 +4142,8 @@ button,
 }
 @media (max-width: 767px) {
   .feedback__title {
-    padding-left: 114px;
+    text-align: center;
+    padding-left: 0;
   }
 }
 
