@@ -3055,12 +3055,10 @@ button,
 
 .coaches {
   width: 100%;
-  padding: 0 calc(50% - 642px);
   padding-bottom: 105px;
 }
 @media (max-width: 1199px) {
   .coaches {
-    padding: 0 calc(50% - 345px);
     padding-bottom: 100px;
   }
 }
@@ -3141,7 +3139,7 @@ button,
 }
 
 .coaches__button--prev {
-  left: 0;
+  left: 40px;
 }
 @media (max-width: 767px) {
   .coaches__button--prev {
@@ -3149,7 +3147,7 @@ button,
   }
 }
 .coaches__button--next {
-  right: 0;
+  right: 40px;
 }
 @media (max-width: 767px) {
   .coaches__button--next {
