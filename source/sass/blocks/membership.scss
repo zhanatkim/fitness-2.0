@@ -21,8 +21,6 @@
   padding-bottom: 7px;
 
   @include vp-1199 {
-    text-align: start;
-    padding-left: calc(50% - 96px);
     padding-bottom: 10px;
   }
 

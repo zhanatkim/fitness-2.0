@@ -2221,9 +2221,6 @@ button,
 }
 @media (max-width: 1199px) {
   .gym__title {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    padding-left: 200px;
     font-size: 42px;
   }
 }
@@ -2470,8 +2467,6 @@ button,
 }
 @media (max-width: 1199px) {
   .membership__title {
-    text-align: start;
-    padding-left: calc(50% - 96px);
     padding-bottom: 10px;
   }
 }
@@ -3076,8 +3071,8 @@ button,
 }
 @media (max-width: 1199px) {
   .coaches__title {
+    text-align: center;
     padding-bottom: 31px;
-    padding-left: calc(50% - 63px);
   }
 }
 @media (max-width: 767px) {
@@ -3304,12 +3299,11 @@ button,
 @media (max-width: 1199px) {
   .advantages__title {
     padding-bottom: 48px;
-    text-align: start;
-    padding-left: calc(50% - 161px);
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .advantages__title {
+    text-align: start;
     padding-left: 38px;
     padding-bottom: 47px;
   }
@@ -3598,9 +3592,7 @@ button,
 }
 @media (max-width: 1199px) {
   .promo__title {
-    text-align: start;
     padding-bottom: 41px;
-    padding-left: calc(50% - 49px);
   }
 }
 @media (max-width: 767px) {

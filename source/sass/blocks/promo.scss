@@ -16,9 +16,7 @@
   text-align: center;
 
   @include vp-1199 {
-    text-align: start;
     padding-bottom: 41px;
-    padding-left: calc(50% - 49px);
   }
 
   @include vp-767 {
