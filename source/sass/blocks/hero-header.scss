@@ -7,8 +7,8 @@
   padding-top: 51px;
   padding-bottom: 51px;
   display: grid;
-  grid-template-columns: 33.78% 1fr;
-  gap: 5.7%;
+  grid-template-columns: 34.2% 1fr;
+  gap: 5.5%;
 
   @include vp-1199 {
     padding: 0 calc(50% - 339px);
@@ -78,7 +78,7 @@
   text-align: right;
   min-width: 113px;
   position: absolute;
-  top: 57%;
+  top: 55.6%;
   left: 5%;
 
   @include vp-1199 {
@@ -98,14 +98,14 @@
   font-weight: 600;
   line-height: 1em;
   letter-spacing: 0.05em;
-  padding-right: 50px;
-  padding-bottom: 20px;
+  padding-right: 55px;
+  padding-bottom: 23px;
   text-transform: uppercase;
 
   @include vp-1199 {
     font-size: 30px;
     padding-right: 0;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 
   @include vp-767 {
@@ -127,15 +127,17 @@
 }
 
 .hero-header__button {
-  margin-top: 55px;
+  margin-top: 52px;
   box-sizing: border-box;
-  padding: 22px 54px;
+  padding: 21px 54px;
   text-align: center;
   box-shadow: 0 0 0 4px $color-default-white;
+  margin-right: 5px;
 
   @include vp-1199 {
     margin-top: 40px;
     padding: 22px 31px;
+    margin-right: 0;
   }
 
   @include vp-767 {

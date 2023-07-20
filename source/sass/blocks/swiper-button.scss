@@ -1,6 +1,7 @@
 .swiper-button {
   @include hover-focus {
     outline: none;
+
     &::before {
       content: "";
       position: absolute;

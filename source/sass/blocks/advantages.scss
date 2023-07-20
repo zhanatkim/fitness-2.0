@@ -1,5 +1,8 @@
 .advantages {
-  padding: 110px 174px 122px 182px;
+  padding: 0 calc(50% - 580px);
+  padding-top: 110px;
+  padding-bottom: 122px;
+  // padding: 110px 174px 122px 182px;
   background-color: $color-bg-light;
 
   @include vp-1199 {
@@ -37,11 +40,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 79px;
+  padding-right: 71px;
 
   @include vp-1199 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 45px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @include vp-767 {
