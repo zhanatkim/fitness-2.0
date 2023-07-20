@@ -4189,12 +4189,16 @@ button,
 }
 
 .feedback__swiper {
-  width: 50%;
-  margin: 0 auto;
+  padding: 0 calc(50% - 280px);
 }
 @media (max-width: 1199px) {
   .feedback__swiper {
-    width: 100%;
+    padding: 0 calc(50% - 283px);
+  }
+}
+@media (max-width: 767px) {
+  .feedback__swiper {
+    padding: 0;
   }
 }
 
@@ -4214,7 +4218,6 @@ button,
 }
 @media (max-width: 1199px) {
   .feedback__inner {
-    width: 73.69%;
     padding: 58px 62px;
   }
 }
@@ -4312,7 +4315,7 @@ button,
   }
 }
 .feedback__button--prev {
-  left: 0;
+  left: 25%;
 }
 @media (max-width: 1199px) {
   .feedback__button--prev {
@@ -4325,7 +4328,7 @@ button,
   }
 }
 .feedback__button--next {
-  right: 0;
+  right: 25%;
 }
 @media (max-width: 1199px) {
   .feedback__button--next {
@@ -4382,7 +4385,7 @@ button,
   font-weight: 800;
   line-height: 156%;
   padding-bottom: 3px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 @media (max-width: 1199px) {
   .freeclass__title {
