@@ -5,6 +5,11 @@ function showChapter(evt) {
   if (!evt.target.closest('.faq__button')) {
     return;
   }
+  for (let i = 0; i < buttonsContainer.children.length; i++) {
+    buttonsContainer.children[i]. classList.remove('is-active');
+    evt.target.classList.add('is-active');
+  }
+
   const chaptersItems = Array.from(chaptersContainer.children);
   const currentChapter = chaptersItems.find((el) => el.dataset.id === evt.target.dataset.id);
   if (!currentChapter) {

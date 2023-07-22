@@ -9,6 +9,7 @@
   border: none;
   cursor: pointer;
   transition: background-color $trans-default;
+  user-select: none;
 
   &--dark {
     @include hover-focus {
@@ -19,6 +20,7 @@
 
     @include active {
       color: $color-default-navy;
+      background-color: $color-default-white;
     }
 
     @include disabled {
@@ -43,6 +45,7 @@
     }
 
     @include active {
+      background: $color-grd-vertical;
       color: rgba($color-default-white, 0.7);
     }
 

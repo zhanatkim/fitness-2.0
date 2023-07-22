@@ -70,9 +70,44 @@
   font-size: 18px;
   font-weight: 500;
   box-shadow: 0 0 0 1px rgba(16, 38, 84, 0.2);
+  line-height: 1em;
+  font-family: $ff-default;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: $color-default-navy;
+  user-select: none;
+
+  // Активное состояние кнопки
+  &.is-active {
+    background: $color-grd-vertical;
+    color: $color-default-white;
+    box-shadow: none;
+  }
 
   @include vp-767 {
     font-size: 16px;
     padding: 13px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px $color-default-navy;
+    background: transparent;
+    color: $color-default-navy;
+  }
+
+  &:active {
+    box-shadow: none;
+    background: $color-grd-vertical;
+    color: $color-default-white;
+  }
+
+  &:disabled {
+    box-shadow: 0 0 0 1px rgba(16, 38, 84, 0.2);
+    background: transparent;
+    color: #c8c9cc;
   }
 }

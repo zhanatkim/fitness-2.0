@@ -1,8 +1,7 @@
 .advantages {
   padding: 0 calc(50% - 580px);
   padding-top: 110px;
-  padding-bottom: 122px;
-  // padding: 110px 174px 122px 182px;
+  padding-bottom: 10px;
   background-color: $color-bg-light;
 
   @include vp-1199 {
@@ -10,16 +9,16 @@
   }
 
   @include vp-767 {
-    padding: 65px 0 68px;
+    padding: 65px 0 60px;
   }
 }
 
 .advantages__title {
   text-align: center;
-  padding-bottom: 52px;
+  padding-bottom: 12px;
 
   @include vp-1199 {
-    padding-bottom: 48px;
+    padding-bottom: 46px;
   }
 
   @include vp-767 {
@@ -35,7 +34,6 @@
 }
 
 .advantages__list {
-  gap: 78px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -46,25 +44,51 @@
   @include vp-1199 {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 45px;
+    gap: 43px;
     padding-left: 0;
     padding-right: 0;
   }
+}
 
-  @include vp-767 {
-    gap: 44px;
+.advantages__item {
+  position: relative;
+
+  &:first-child {
+    top: 40px;
+  }
+
+  &--blue {
+    top: -39px;
+    left: calc(50% - 510px);
+  }
+
+  &:nth-child(3n) {
+    top: -114px;
+  }
+
+  @include vp-1199 {
+    position: static;
+  }
+
+  &:first-child > .advantages__sublist {
+    @include vp-767 {
+      gap: 33px;
+    }
   }
 }
+
 
 .advantages__sublist {
   height: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 240px;
+  flex-wrap: wrap;
 
   @include vp-1199 {
+    justify-content: space-around;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 2px;
+    gap: 32px;
 
     &::after {
       display: none;
@@ -73,7 +97,7 @@
 
   @include vp-767 {
     flex-direction: column;
-    gap: 40px;
+    gap: 37px;
   }
 }
 
@@ -82,11 +106,11 @@
 
   &::after {
     content: "";
-    width: 100%;
+    width: 90%;
     height: 2px;
     background-color: rgba(209, 10, 66, 0.2);
     position: absolute;
-    top: 190%;
+    top: 192%;
     left: 0;
 
     @include vp-1199 {
@@ -96,30 +120,27 @@
 }
 
 .advantages__card {
-  // max-width: 330px;
   display: flex;
-  width: 100%;
+  width: 330px;
   align-items: flex-start;
   justify-content: space-between;
   gap: 25px;
 
   @include vp-1199 {
     gap: 30px;
+    width: 322px;
   }
 
   @include vp-767 {
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
-    gap: 9px;
+    gap: 11px;
   }
 }
 
 .advantages__card--blue {
   width: 240px;
-  position: absolute;
-  top: 0;
-  left: calc(50% - 123px);
   padding: 70px 34px 58px;
   margin: 0 auto;
   color: $color-default-white;
@@ -143,10 +164,9 @@
   }
 
   @include vp-1199 {
-    position: static;
     width: 65.55%;
-    padding-top: 42px;
-    padding-bottom: 45px;
+    padding-top: 44px;
+    padding-bottom: 43px;
 
     .advantages__text {
       gap: 13px;
@@ -181,7 +201,7 @@
 
   @include vp-767 {
     text-align: center;
-    width: 75%;
+    width: 73%;
   }
 }
 
@@ -193,10 +213,13 @@
 .advantages__text {
   gap: 10px;
   line-height: 140%;
-  max-width: 233px;
 
   @include vp-1199 {
     gap: 7px;
+  }
+
+  @include vp-1199 {
+    gap: 10px;
   }
 }
 
@@ -215,7 +238,7 @@
   &--gradient {
     font-size: 71px;
     color: #0041ca;
-    background: linear-gradient(#d10a42, #0041ca);
+    background: $color-grd-secondary;
     background-size: 100%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -233,7 +256,7 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 100%;
-  padding-left: 5px;
+  padding-left: 7px;
 
   @include vp-1199 {
     font-size: 20px;
@@ -247,4 +270,8 @@
       font-size: 22px;
     }
   }
+}
+
+.advantages__feature {
+  font-weight: 300;
 }

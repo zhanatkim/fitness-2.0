@@ -17,6 +17,9 @@
         border-bottom: none;
         outline: 1px solid $color-default-white;
         outline-offset: 1px;
+        &::placeholder {
+          color: transparent;
+        }
       }
 
       font-size: 14px;

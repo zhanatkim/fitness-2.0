@@ -1,11 +1,11 @@
 .feedback {
   width: 100%;
   padding-top: 120px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 
   @include vp-1199 {
     padding-top: 93px;
-    padding-bottom: 79px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
@@ -16,8 +16,7 @@
 
 .feedback__title {
   text-align: center;
-  padding-bottom: 40px;
-  padding-left: 10px;
+  padding-bottom: 36px;
 
   @include vp-1199 {
     text-align: start;
@@ -43,28 +42,28 @@
   }
 }
 
-.feedback__inner {
+.feedback__slide {
+  width: 100%;
   max-width: 560px;
   height: 100%;
+  display: flex;
+}
+
+.feedback__inner {
+  background-color: $color-bg-navy;
+  color: $color-default-white;
   padding: 57px 62px;
   display: grid;
   grid-template-areas:
     "photo title"
     "photo text";
   column-gap: 28px;
-  background-color: $color-bg-navy;
-  color: $color-default-white;
   margin: 0 auto;
 
-  @include vp-1199 {
-    padding: 58px 62px;
-  }
 
   @include vp-767 {
     column-gap: 15px;
     row-gap: 17px;
-    width: 70%;
-    padding: 38px 25px 33px;
     grid-template-areas:
       "photo title"
       "text text";
@@ -105,6 +104,7 @@
 .feedback__comment {
   padding: 0;
   margin: 0;
+  min-height: 90px;
   line-height: 140%;
   font-weight: 400;
   grid-area: text;
@@ -117,7 +117,7 @@
 .feedback__button {
   top: calc(50% - 10px);
 
-  @include vp-767 {
+  @include vp-1199 {
     top: 50%;
   }
 

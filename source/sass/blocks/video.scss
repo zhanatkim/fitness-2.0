@@ -81,6 +81,7 @@
 
 .video__placeholder picture img {
   height: 100%;
+  width: 100%;
 }
 
 .video__player {
@@ -148,6 +149,19 @@
       width: 9px;
       height: 12px;
     }
+  }
+
+  @include focus {
+      color: $color-default-navy;
+      border-image: $color-default-navy;
+
+      &::before {
+        background: $color-default-navy;
+      }
+
+      &::after {
+        background: $color-default-white;
+      }
   }
 
   &:disabled {

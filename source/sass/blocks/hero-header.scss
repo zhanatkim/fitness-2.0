@@ -1,6 +1,6 @@
 .hero-header {
   width: 100%;
-  background: #b80027 url("../img/hero-bg.jpg") no-repeat left 0 bottom 0;
+  background: #b80027 url("../img/hero-bg.jpg") no-repeat left 0 top 0;
   background-size: cover;
   color: $color-default-white;
   padding: 0 calc(50% - 580px);
@@ -12,16 +12,16 @@
 
   @include vp-1199 {
     padding: 0 calc(50% - 339px);
-    padding-top: 91px;
+    padding-top: 81px;
     padding-bottom: 82px;
     grid-template-columns: 1fr 1fr;
-    gap: 5%;
+    gap: 4.8%;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
     padding: 0 15px;
-    padding-top: 120px;
+    padding-top: 115px;
     padding-bottom: 80px;
   }
 }
@@ -112,6 +112,7 @@
     align-self: flex-end;
     font-size: 24px;
     padding-bottom: 17px;
+    padding-right: 4px;
   }
 }
 

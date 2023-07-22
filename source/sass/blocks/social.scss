@@ -15,12 +15,12 @@
   }
 
   @include active {
-    background-color: #102654;
+    background-color: $color-default-navy;
     color: $color-default-white;
   }
 
   &:disabled {
-    background-color: rgba(#ffffff, 30%);
+    background-color: rgba($color-default-white, 30%);
     color: $color-default-navy;
   }
 }

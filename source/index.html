@@ -141,7 +141,7 @@
                 </div>
               </div>
               <p class="event__text">Ежегодные соревнования по CrossFit</p>
-              <a class="event__button button button--dark">заполнить заявку</a>
+              <a class="event__button button button--dark" href="#">заполнить заявку</a>
             </div>
             <div class="event__image">
               <picture>
@@ -324,7 +324,7 @@
                     </div>
                     <div class="advantages__text">
                       <p class="advantages__name">Площадь</p>
-                      <p class="advantages__feature">Занимайтесь без очередей и толпучки</p>
+                      <p class="advantages__feature">Занимайтесь без очередей и&nbsp;толпучки</p>
                     </div>
                   </div>
                 </li>
@@ -429,15 +429,15 @@
           <h2 class="faq__title title title--medium">Вопросы и ответы</h2>
           <div class="faq__container">
             <div class="faq__controls">
-              <button class="faq__button button button--light" type="button" data-id="center">Центр</button>
-              <button class="faq__button button button--light" type="button" data-id="abonement">Абонемент</button>
-              <button class="faq__button button button--light" type="button" data-id="service">Услуги</button>
-              <button class="faq__button button button--light" type="button" data-id="rules">Правила</button>
+              <button class="faq__button is-active" type="button" data-id="center">Центр</button>
+              <button class="faq__button" type="button" data-id="abonement">Абонемент</button>
+              <button class="faq__button" type="button" data-id="service">Услуги</button>
+              <button class="faq__button" type="button" data-id="rules">Правила</button>
             </div>
             <div class="faq__content">
         <!-- Центр -->
               <div class="faq__chapter chapter is-open" data-id="center" data-accordion="parent">
-                <div class="chapter__element is-active" data-accordion="element">
+                <div class="chapter__element" data-accordion="element">
                   <button class="chapter__button" type="button" data-accordion="button">
                     <span>Как стать членом фитнес-центра?</span>
                     <span class="chapter__mark"></span>
@@ -680,10 +680,12 @@
               </div>
               <div class="feedback__slide swiper__slide swiper-slide">
                 <div class="feedback__inner">
-                  <picture>
-                    <source type="image/webp" srcset="img/feedback-photo-1x.webp 1x, img/feedback-photo-2x.webp 2x">
-                    <img src="img/feedback-photo-1x.png" srcset="img/feedback-photo-2x.png 2x" alt="Анна Орлова">
-                  </picture>
+                  <div class="feedback__image">
+                    <picture>
+                      <source type="image/webp" srcset="img/feedback-photo-1x.webp 1x, img/feedback-photo-2x.webp 2x">
+                      <img src="img/feedback-photo-1x.png" srcset="img/feedback-photo-2x.png 2x" alt="Анна Орлова">
+                    </picture>
+                  </div>
                   <h3 class="feedback__name">Анна Орлова</h3>
                   <p class="feedback__comment">«Хожу в Supergym уже больше года. Зал просторный, даже в вечернее время нет очередей»
                   </p>
@@ -697,49 +699,53 @@
         <section class="main-footer">
           <h2 class="visually-hidden">Контакты и бесплатное занятие</h2>
           <div class="main-footer__freeclass freeclass" data-form-validate data-callback="base">
-            <h3 class="freeclass__title title title--medium">Бесплатное занятие</h3>
-            <form class="freeclass__form" method="post" action="https://echo.htmlacademy.ru/" novalidate>
-              <div class="freeclass__wrapper">
-                <div class="freeclass__custom-input custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
-                  <label>
-                    <input type="text" name="name" placeholder="Имя" required>
-                  </label>
+            <div class="freeclass__container">
+              <h3 class="freeclass__title title title--medium">Бесплатное занятие</h3>
+              <form class="freeclass__form" method="post" action="https://echo.htmlacademy.ru/" novalidate>
+                <div class="freeclass__wrapper">
+                  <div class="freeclass__custom-input custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                    <label>
+                      <input type="text" name="name" placeholder="Имя" required>
+                    </label>
+                  </div>
+                  <div class="freeclass__custom-input custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
+                    <label>
+                      <input type="tel" name="tel" placeholder="Телефон" required>
+                    </label>
+                  </div>
                 </div>
-                <div class="freeclass__custom-input custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
-                  <label>
-                    <input type="tel" name="tel" placeholder="Телефон" required>
-                  </label>
-                </div>
-              </div>
-              <button class="freeclass__button button button--dark" type="submit">отправить</button>
-            </form>
+                <button class="freeclass__button button button--dark" type="submit">отправить</button>
+              </form>
+            </div>
           </div>
           <div class="main-footer__contacts contacts">
-            <h3 class="contacts__title title title--medium">Контакты</h3>
-            <div class="contacts__wrapper">
-              <div class="contacts__column">
-                <ul class="contacts__list">
-                  <li class="contacts__item">
-                    <p class="contacts__key">Адрес:</p>
-                    <p class="contacts__value">г. Омск, ул. 60 лет Октября, 7</p>
-                  </li>
-                  <li class="contacts__item">
-                    <p class="contacts__key">График работы:</p>
-                    <p class="contacts__value">Пн-Вс: с 8:00 до 22:00</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="contacts__column">
-                <ul class="contacts__list">
-                  <li class="contacts__item">
-                    <p class="contacts__key">Телефон:</p>
-                    <a class="contacts__value" href="tel:88005555555">8-800-555-55-55</a>
-                  </li>
-                  <li class="contacts__item">
-                    <p class="contacts__key">Email:</p>
-                    <p class="contacts__value">omsk@supergym.ru</p>
-                  </li>
-                </ul>
+            <div class="contacts__container">
+              <h3 class="contacts__title title title--medium">Контакты</h3>
+              <div class="contacts__wrapper">
+                <div class="contacts__column">
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      <p class="contacts__key">Адрес:</p>
+                      <p class="contacts__value">г. Омск, ул. 60 лет Октября, 7</p>
+                    </li>
+                    <li class="contacts__item">
+                      <p class="contacts__key">График работы:</p>
+                      <p class="contacts__value">Пн-Вс: с 8:00 до 22:00</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="contacts__column">
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      <p class="contacts__key">Телефон:</p>
+                      <a class="contacts__value contacts__link" href="tel:88005555555">8-800-555-55-55</a>
+                    </li>
+                    <li class="contacts__item">
+                      <p class="contacts__key">Email:</p>
+                      <a class="contacts__value contacts__link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

@@ -119,10 +119,12 @@ export class Accordions {
 
     element.classList.add('is-active');
     if (transition) {
-      contentElement.style.maxHeight = `${this._openHeight}px`;
+      // contentElement.style.maxHeight = `${this._openHeight}px`;
+      contentElement.style.maxHeight = '100%';
     } else {
       contentElement.style.transition = 'none';
-      contentElement.style.maxHeight = `${this._openHeight}px`;
+      // contentElement.style.maxHeight = `${this._openHeight}px`;
+      contentElement.style.maxHeight = '100%';
       setTimeout(() => {
         contentElement.style.transition = null;
       });

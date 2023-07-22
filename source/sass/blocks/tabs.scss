@@ -33,6 +33,21 @@
 }
 
 .tabs__control {
+  @include hover-focus {
+    outline: none;
+    opacity: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #d10a42;
+    }
+  }
+
   font-size: 20px;
   line-height: 150%;
   font-family: $ff-default;
@@ -45,9 +60,9 @@
   opacity: 0.5;
   min-width: auto;
   justify-content: center;
+  position: relative;
 
   &.is-active {
-    position: relative;
     opacity: 1;
     pointer-events: none;
 

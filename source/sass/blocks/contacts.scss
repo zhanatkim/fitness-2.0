@@ -1,12 +1,11 @@
 .contacts {
   width: 100%;
   padding-left: 120px;
-  padding-right: calc(50% - 181px);
+  // padding-right: calc(50% - 181px);
   padding-top: 56px;
   padding-bottom: 64px;
   border-top: 1px solid $color-border;
-  display: grid;
-  gap: 37px;
+
 
   & a {
     color: $color-default-navy;
@@ -19,6 +18,23 @@
   @include vp-767 {
     gap: 37px;
     padding: 65px 15px 63px;
+  }
+}
+
+.contacts__container {
+  display: grid;
+  gap: 37px;
+  width: 404px;
+  margin-right: auto;
+
+  @include vp-1199 {
+    width: 454px;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    gap: 37px;
   }
 }
 
@@ -104,5 +120,21 @@
 
   @include vp-1199 {
     font-size: 18px;
+  }
+}
+
+.contacts__link {
+  @include hover {
+    opacity: 0.5;
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-navy;
+    outline-offset: 1px;;
+  }
+
+  @include active {
+    opacity: 0.75;
+    outline: none;
   }
 }

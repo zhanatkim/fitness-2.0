@@ -130,6 +130,7 @@
   position: relative;
   letter-spacing: 0.05em;
   font-weight: 700;
+  user-select: none;
 
   &::before {
     content: "";
@@ -204,6 +205,7 @@
 .promo__sum {
   font-size: 70px;
   line-height: 100%;
+  font-weight: 700;
   padding-top: 3px;
   padding-bottom: 20px;
 
