@@ -3351,9 +3351,7 @@ button,
 }
 
 .coaches__feature {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   position: absolute;
