@@ -18,7 +18,7 @@
   text-align: center;
 
   @include vp-1199 {
-    padding-bottom: 41px;
+    padding-bottom: 40px;
   }
 }
 
@@ -66,12 +66,17 @@
 
 .promo__inner {
   width: 68%;
-  padding: 40px 0 45px;
+  padding: 42px 0;
   justify-self: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+
+  @include vp-1199 {
+    padding-top: 40px;
+    padding-bottom: 44px;
+  }
 
   @include vp-767 {
     align-items: center;
@@ -102,7 +107,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 30px;
     max-width: 290px;
     margin: 0 auto;
   }
@@ -115,12 +120,16 @@
   align-items: flex-start;
   border: 7px solid transparent;
   background: linear-gradient($color-default-white, $color-default-white) padding-box, $color-grd-vertical border-box;
-  padding: 24px 28px 28px;
+  padding: 24px 28px;
   min-height: 211px;
+
+  @include vp-1199 {
+    padding-bottom: 26px;
+  }
 
   @include vp-767 {
     align-items: center;
-    padding: 34px 28px 36px;
+    padding: 36px 28px 35px;
   }
 }
 
@@ -135,7 +144,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     left: 0;
     right: 0;
     width: 100%;
@@ -144,17 +153,16 @@
 
   @include hover {
     opacity: 0.8;
-  }
 
-  @include active {
-    outline: none;
-    opacity: 1;
+    @include active {
+      outline: none;
+      opacity: 1;
 
-    &::before {
-      visibility: visible;
+      &::before {
+        visibility: visible;
+      }
     }
   }
-
 
   &--white {
     font-size: 14px;
@@ -174,7 +182,7 @@
     }
 
     @include vp-767 {
-      margin-top: 30px;
+      margin-top: 28px;
     }
   }
 
@@ -229,7 +237,15 @@
 }
 
 .promo__subtitle {
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   font-size: 26px;
   line-height: 100%;
+
+  @include vp-767 {
+    padding-bottom: 12px;
+  }
+}
+
+.promo__description {
+  line-height: 140%;
 }

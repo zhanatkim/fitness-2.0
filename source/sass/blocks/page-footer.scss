@@ -48,6 +48,14 @@
 .page-footer__logo {
   padding-top: 12px;
 
+  @include hover-focus {
+    color: $color-accent-blue;
+
+    @include active {
+      color: $color-default-white;
+    }
+  }
+
   @include vp-1199 {
     padding-bottom: 12px;
   }

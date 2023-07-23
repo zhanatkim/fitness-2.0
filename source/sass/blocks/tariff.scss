@@ -24,6 +24,12 @@
       color: $color-default-white;
       box-shadow: none;
     }
+
+    @include active {
+      & .tariff__button {
+        color: rgba($color-default-white, 0.7);
+      }
+    }
   }
 
   position: relative;

@@ -1,7 +1,7 @@
 .custom-input {
   position: relative;
   display: flex;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
 
   label {
     display: flex;
@@ -17,6 +17,7 @@
         border-bottom: none;
         outline: 1px solid $color-default-white;
         outline-offset: 1px;
+
         &::placeholder {
           color: transparent;
         }

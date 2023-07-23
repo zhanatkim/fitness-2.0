@@ -12,48 +12,47 @@
   user-select: none;
 
   &--dark {
-    @include hover-focus {
-      outline: none;
-      background-color: $color-default-white;
-      color: $color-accent-blue;
-    }
-
-    @include active {
-      color: $color-default-navy;
-      background-color: $color-default-white;
-    }
-
-    @include disabled {
-      color: rgba($color-default-white, 0.5);
-      box-shadow: 0 0 0 4px rgba($color-default-white, 0.5);
-    }
-
     color: $color-default-white;
     box-shadow: 0 0 0 4px $color-default-white;
 
     @include vp-1199 {
       box-shadow: 0 0 0 2px $color-default-white;
     }
+
+    @include hover-focus {
+      outline: none;
+      background-color: $color-default-white;
+      color: $color-accent-blue;
+
+      @include active {
+        color: $color-default-navy;
+      }
+    }
+
+    &:disabled {
+      color: rgba($color-default-white, 0.5);
+      box-shadow: 0 0 0 4px rgba($color-default-white, 0.5);
+    }
   }
 
   &--light {
+    color: $color-default-navy;
+    box-shadow: 0 0 0 2px $color-default-navy;
+
     @include hover-focus {
       outline: none;
       background: $color-grd-vertical;
       color: $color-default-white;
       box-shadow: none;
+
+      @include active {
+        color: rgba($color-default-white, 0.7);
+      }
     }
 
-    @include active {
-      background: $color-grd-vertical;
-      color: rgba($color-default-white, 0.7);
-    }
-
-    @include disabled {
+    &:disabled {
       color: rgba($color-default-navy, 0.3);
       box-shadow: 0 0 0 4px rgba($color-default-navy, 0.3);
     }
-    color: $color-default-navy;
-    box-shadow: 0 0 0 2px $color-default-navy;
   }
 }

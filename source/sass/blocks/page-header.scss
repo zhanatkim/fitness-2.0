@@ -49,3 +49,22 @@
     font-size: 20px;
   }
 }
+
+.page-header__logo,
+.page-header__phone {
+  @include hover {
+    opacity: 0.5;
+
+    @include active {
+      opacity: 0.25;
+    }
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-white;
+
+    @include active {
+      outline: none;
+    }
+  }
+}

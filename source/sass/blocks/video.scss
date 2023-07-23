@@ -11,6 +11,7 @@
     top: 0;
     bottom: 0;
     z-index: 2;
+    transition: display $trans-default;
   }
 
   @include hover-focus {
@@ -45,7 +46,7 @@
 
   &[data-is-playing="is-playing"] {
     & .video__placeholder {
-      display: none;
+      visibility: hidden;
     }
 
     &::before {
@@ -77,6 +78,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
+  transition: visibility 0.5s ease;
 }
 
 .video__placeholder picture img {
@@ -89,6 +91,7 @@
   width: 100%;
   height: 100%;
   visibility: hidden;
+  border: none;
 }
 
 .video__button {
@@ -151,17 +154,17 @@
     }
   }
 
-  @include focus {
-      color: $color-default-navy;
-      border-image: $color-default-navy;
+  @include hover-focus {
+    color: $color-default-navy;
+    border-image: $color-default-navy;
 
-      &::before {
-        background: $color-default-navy;
-      }
+    &::before {
+      background: $color-default-navy;
+    }
 
-      &::after {
-        background: $color-default-white;
-      }
+    &::after {
+      background: $color-default-white;
+    }
   }
 
   &:disabled {
