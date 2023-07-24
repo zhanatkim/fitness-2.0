@@ -2399,20 +2399,8 @@ button,
   width: 52%;
   height: 52%;
 }
-.video[data-is-playing=is-playing] .video__placeholder {
-  visibility: hidden;
-}
-.video[data-is-playing=is-playing]::before {
+.video[data-is-playing=is-playing] .video__button, .video[data-is-playing=is-out] .video__button {
   display: none;
-}
-.video[data-is-playing=is-playing] .video__button {
-  visibility: hidden;
-}
-.video[data-is-playing=is-playing] .video__player {
-  visibility: visible;
-}
-.video[data-is-playing=is-out] .video__button {
-  visibility: hidden;
 }
 
 .video__placeholder {
@@ -2422,8 +2410,6 @@ button,
   width: 100%;
   height: 100%;
   z-index: 1;
-  -webkit-transition: visibility 0.5s ease;
-  transition: visibility 0.5s ease;
 }
 
 .video__placeholder picture img {
@@ -2432,13 +2418,12 @@ button,
 }
 
 .video__player {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
-  visibility: hidden;
-  border: none;
 }
 
 .video__button {
@@ -4270,31 +4255,27 @@ button,
   display: grid;
 }
 
-.chapter__element.is-active .chapter__button {
+.chapter__element:last-child {
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+}
+
+.chapter__element.is-active .chapter__top {
   padding-bottom: 9px;
 }
-.chapter__element.is-active .chapter__button .chapter__mark {
+.chapter__element.is-active .chapter__top .chapter__button .chapter__mark {
   background-color: #102654;
 }
-.chapter__element.is-active .chapter__button .chapter__mark::before {
+.chapter__element.is-active .chapter__top .chapter__button .chapter__mark::before {
   background-color: #ffffff;
 }
 @media (max-width: 767px) {
-  .chapter__element.is-active .chapter__button {
+  .chapter__element.is-active .chapter__top {
     padding-bottom: 13px;
   }
 }
 
-.chapter__button {
-  border: none;
+.chapter__top {
   border-top: 1px solid rgba(28, 51, 116, 0.2);
-  cursor: pointer;
-  background-color: transparent;
-  color: #102654;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 120%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -4303,13 +4284,54 @@ button,
   padding-bottom: 25px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 52px;
-  grid-template-columns: 1fr 52px;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -ms-grid-columns: 1fr 42px;
+  grid-template-columns: 1fr 42px;
 }
-.chapter__button:last-child {
-  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+.chapter__top p {
+  margin: 0;
+  padding: 0;
+  color: #102654;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+@media (max-width: 767px) {
+  .chapter__top p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1199px) {
+  .chapter__top {
+    padding-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .chapter__top {
+    -ms-grid-columns: 1fr 32px;
+    grid-template-columns: 1fr 32px;
+    padding: 20px 0;
+    font-size: 18px;
+  }
+}
+
+.chapter__button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (hover: hover) {
   .chapter__button:hover:not(.focus-visible) {
@@ -4343,24 +4365,6 @@ button,
 .chapter__button:disabled {
   opacity: 0.3;
 }
-@media (max-width: 1199px) {
-  .chapter__button {
-    padding-left: 0;
-  }
-}
-@media (max-width: 767px) {
-  .chapter__button {
-    padding: 20px 0;
-    font-size: 18px;
-  }
-}
-
-.chapter__button span {
-  text-align: start;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
 
 .chapter__mark {
   width: 42px;
@@ -4370,6 +4374,8 @@ button,
   border-radius: 50%;
   -ms-grid-column-align: right;
       justify-self: right;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 .chapter__mark::before, .chapter__mark::after {
   content: "";
@@ -4377,10 +4383,11 @@ button,
   background-color: #102654;
 }
 .chapter__mark::before {
-  width: 42.86%;
+  width: 42.88%;
   height: 1px;
   top: 50%;
   left: 29%;
+  z-index: 1;
 }
 .chapter__mark::after {
   height: 42.86%;

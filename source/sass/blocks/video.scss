@@ -42,31 +42,10 @@
     }
   }
 
-  // запуск видео
-
-  &[data-is-playing="is-playing"] {
-    & .video__placeholder {
-      visibility: hidden;
-    }
-
-    &::before {
-      display: none;
-    }
-
-    .video__button {
-      visibility: hidden;
-    }
-
-    .video__player {
-      visibility: visible;
-    }
-  }
-
-  // видео не работает
-
+  &[data-is-playing="is-playing"],
   &[data-is-playing="is-out"] {
     .video__button {
-      visibility: hidden;
+      display: none;
     }
   }
 }
@@ -78,7 +57,6 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  transition: visibility 0.5s ease;
 }
 
 .video__placeholder picture img {
@@ -87,11 +65,10 @@
 }
 
 .video__player {
+  position: relative;
   display: flex;
   width: 100%;
   height: 100%;
-  visibility: hidden;
-  border: none;
 }
 
 .video__button {

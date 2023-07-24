@@ -8,11 +8,15 @@
   display: grid;
 }
 
+.chapter__element:last-child {
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+}
+
 .chapter__element.is-active {
-  .chapter__button {
+  .chapter__top {
     padding-bottom: 9px;
 
-    & .chapter__mark {
+    & .chapter__button .chapter__mark {
       background-color: $color-default-navy;
 
       &::before {
@@ -26,17 +30,8 @@
   }
 }
 
-
-.chapter__button {
-  border: none;
+.chapter__top {
   border-top: 1px solid rgba(28, 51, 116, 0.2);
-  cursor: pointer;
-  background-color: transparent;
-  color: $color-default-navy;
-  font-family: $ff-default;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 120%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -44,12 +39,45 @@
   padding-top: 25px;
   padding-bottom: 25px;
   display: grid;
-  grid-template-columns: 1fr 52px;
-  transition: background-color $trans-default;
+  grid-template-columns: 1fr 42px;
 
-  &:last-child {
-    border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+  & p {
+    margin: 0;
+    padding: 0;
+    color: $color-default-navy;
+    font-family: $ff-default;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: start;
+    align-self: center;
+
+    @include vp-767 {
+      font-size: 18px;
+    }
   }
+
+  @include vp-1199 {
+    padding-left: 0;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr 32px;
+    padding: 20px 0;
+    font-size: 18px;
+  }
+}
+
+
+.chapter__button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
 
   @include hover-focus {
     outline: none;
@@ -79,20 +107,6 @@
   &:disabled {
     opacity: 0.3;
   }
-
-  @include vp-1199 {
-    padding-left: 0;
-  }
-
-  @include vp-767 {
-    padding: 20px 0;
-    font-size: 18px;
-  }
-}
-
-.chapter__button span {
-  text-align: start;
-  align-self: center;
 }
 
 .chapter__mark {
@@ -102,6 +116,7 @@
   position: relative;
   border-radius: 50%;
   justify-self: right;
+  transition: background-color $trans-default;
 
   &::before,
   &::after {
@@ -111,10 +126,11 @@
   }
 
   &::before {
-    width: 42.86%;
+    width: 42.88%;
     height: 1px;
     top: 50%;
     left: calc(50% - 21%);
+    z-index: 1;
   }
 
   &::after {
