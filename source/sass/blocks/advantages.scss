@@ -86,7 +86,6 @@
   flex-wrap: wrap;
 
   @include vp-1199 {
-    justify-content: space-around;
     flex-direction: row;
     gap: 32px;
 
@@ -123,7 +122,7 @@
   display: flex;
   width: 330px;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 25px;
 
   @include vp-1199 {

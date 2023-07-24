@@ -3564,8 +3564,6 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages__sublist {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -3612,9 +3610,9 @@ button,
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 25px;
 }
 @media (max-width: 1199px) {
