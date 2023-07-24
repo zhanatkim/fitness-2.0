@@ -2399,6 +2399,9 @@ button,
   width: 52%;
   height: 52%;
 }
+.video[data-is-playing=is-playing]::before, .video[data-is-playing=is-out]::before {
+  display: none;
+}
 .video[data-is-playing=is-playing] .video__button, .video[data-is-playing=is-out] .video__button {
   display: none;
 }
@@ -2422,6 +2425,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: 100%;
+}
+.video__player iframe {
   width: 100%;
   height: 100%;
 }
